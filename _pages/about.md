@@ -22,5 +22,3 @@ Akshat Sharma is a fourth-year researcher at the **Indian Institute of Science E
 He is the developer of the **Quantum Assembly Theory**, a theoretical framework hosted on ChemRxiv that utilizes electron density topology (QTAIM) to quantify molecular complexity. Akshat’s expertise spans solvothermal synthesis, single-crystal X-ray diffraction (SCXRD) refinement, and DFT-based thermodynamic analysis. 
 
 He is a **Reliance Foundation Scholar**, recognized for academic excellence at the national level in India.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
