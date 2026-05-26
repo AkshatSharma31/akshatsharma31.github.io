@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Undergraduate Researcher at IISER Kolkata | Specializing in Theoretical & Inorganic Chemistry.
+subtitle: Researcher at IISER Kolkata | Specializing in Theoretical & Inorganic Chemistry.
 
 profile:
   align: right
