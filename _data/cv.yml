@@ -41,12 +41,18 @@ cv:
         end_date: Present
         summary: "Supervisor: Dr. Soumyajit Roy"
         highlights:
-          - "Synthesized the giant polyoxometalate cluster $\{Mo_{132}\}$ keplerates and $\{Mo_{154}\}$ giant blue ring using self-assembly in aqueous medium and confirmed the formation using powder X-ray diffraction, UV-vis spectroscopy, and Raman spectroscopy."
-          - "Conducted a detailed study of the polymorphism and solid-state phase transitions of acetaminophen (paracetamol)."
-          - "Synthesized metastable Paracetamol Form II (orthorhombic) and characterized the phase transformation using Single Crystal XRD."
-          - "Synthesized soft-oxometalates for $CO_{2}$ reduction and water oxidation catalysis."
-          - "Analyzed crystal formation as a function of the crystallization medium and temperature by systematically varying ibuprofen concentration, DMSO content, and thermal conditions."
-          - "Trained in advanced crystallographic refinement protocols (Müller lineage standards)."
+          - >
+            Synthesized the giant polyoxometalate cluster {Mo₁₃₂} keplerates and {Mo₁₅₄} giant blue ring using self-assembly in aqueous medium and confirmed the formation using powder X-ray diffraction, UV-vis spectroscopy, and Raman spectroscopy.
+          - >
+            Conducted a detailed study of the polymorphism and solid-state phase transitions of acetaminophen (paracetamol).
+          - >
+            Synthesized metastable Paracetamol Form II (orthorhombic) and characterized the phase transformation using Single Crystal XRD.
+          - >
+            Synthesized soft-oxometalates for CO₂ reduction and water oxidation catalysis.
+          - >
+            Analyzed crystal formation as a function of the crystallization medium and temperature by systematically varying ibuprofen concentration, DMSO content, and thermal conditions.
+          - >
+            Trained in advanced crystallographic refinement protocols (Müller lineage standards).
 
       - company: IIT Ropar
         position: Research Intern
@@ -55,8 +61,10 @@ cv:
         end_date: 2025-07
         summary: "Supervisor: Dr. C.M. Nagaraja"
         highlights:
-          - "Gained foundational knowledge of Metal-Organic Frameworks (MOFs) and Covalent Organic Frameworks (COFs) through an extensive review of the scientific literature."
-          - "Synthesized sterically demanding N-heterocyclic carbene (NHC) ligands and their organometallic complexes, confirming structural integrity via 1H NMR spectroscopy."
+          - >
+            Gained foundational knowledge of Metal-Organic Frameworks (MOFs) and Covalent Organic Frameworks (COFs) through an extensive review of the scientific literature.
+          - >
+            Synthesized sterically demanding N-heterocyclic carbene (NHC) ligands and their organometallic complexes, confirming structural integrity via 1H NMR spectroscopy.
 
     Awards:
       - title: Reliance Foundation Scholarship
@@ -65,7 +73,7 @@ cv:
         summary: "Selected among the top 5,000 students across India for academic excellence."
 
     Publications:
-      - title: "Quantum assembly theory defines molecular complexity from electron density topology"
+      - title: "Quantum assembly theory defines molecular complexity from electron density"
         authors:
           - Akshat Sharma
         publisher: ChemRxiv
