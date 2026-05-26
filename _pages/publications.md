@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: description: Preprints and peer-reviewed research.
+description: Preprints and peer-reviewed research.
 nav: true
 nav_order: 2
 ---
