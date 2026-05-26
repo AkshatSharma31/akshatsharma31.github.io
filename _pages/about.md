@@ -1,34 +1,27 @@
 ---
+---
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Undergraduate Researcher at IISER Kolkata | Specializing in Theoretical & Inorganic Chemistry.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>IISER Kolkata</p>
+    <p>Mohanpur, West Bengal</p>
 
+news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Akshat Sharma is a fourth-year researcher at the **Indian Institute of Science Education and Research (IISER) Kolkata**, specializing in the intersection of inorganic materials chemistry and theoretical quantum chemistry. His research focuses on the design and structural characterization of complex catalytic systems, including giant polyoxometalate clusters such as {Mo132} and {Mo154}.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+He is the developer of the **Quantum Assembly Theory**, a theoretical framework hosted on ChemRxiv that utilizes electron density topology (QTAIM) to quantify molecular complexity. Akshat’s expertise spans solvothermal synthesis, single-crystal X-ray diffraction (SCXRD) refinement, and DFT-based thermodynamic analysis. 
+
+He is a **Reliance Foundation Scholar**, recognized for academic excellence at the national level in India.
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
