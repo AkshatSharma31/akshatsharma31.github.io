@@ -6,7 +6,7 @@ nav: true
 nav_order: 5
 ---
 
-While my primary focus is on theoretical and inorganic chemistry, I believe in maintaining a balance. When I step away from analyzing electron density topologies, here is what I am usually up to:
+While my primary focus is on theoretical and inorganic chemistry, I believe in maintaining a balance. When I step away from chemical synthesis and theoretical calculations, here is what I am usually up to:
 
 ### 🧠 Geopolitics, Philosophy & Lifelong Learning
 I am a naturally curious person who loves diving into global affairs, political systems, and philosophical frameworks. Keeping up with world history, macro-geopolitics, and random general knowledge trivia helps me keep my mind sharp and look at complex problems from multiple angles.
