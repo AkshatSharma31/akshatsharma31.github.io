@@ -411,7 +411,7 @@ ninja.data = [{
               window.location.href = "/projects/3_project/";
             },},{id: "projects-polymorphism-amp-phase-transformations",
           title: 'Polymorphism &amp;amp; Phase Transformations',
-          description: "Tracking solid-state thermal phase transitions and kinetic profiles of active pharmaceutical ingredients.",
+          description: "Quantitative evaluation of the solid-state crystallization kinetics, lattice metrics, and phase profiles of active pharmaceutical ingredients.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-project-5",
