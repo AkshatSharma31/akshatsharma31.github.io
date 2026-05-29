@@ -25,4 +25,4 @@ I am an avid watcher of movies and series. A good narrative is the perfect way t
 
 ***
 
-*Always happy to chat about F1 strategies, exchange movie recommendations, or hear tips for beginner ukulele players!*
+*Always happy to discuss geopolitics and philosophy, chat about F1 strategies, exchange movie recommendations, or hear tips for beginner ukulele players!*
