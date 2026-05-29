@@ -406,7 +406,7 @@ ninja.data = [{
               window.location.href = "/projects/2_project/";
             },},{id: "projects-polyoxometalate-cluster-architectures",
           title: 'Polyoxometalate Cluster Architectures',
-          description: "Synthetic execution, structural profiling, and spectroscopic characterization of giant {Mo132} Keplerate spheres and {Mo154} wheel architectures.",
+          description: "Synthetic execution, structural profiling, and spectroscopic characterization of giant $\{Mo_{132}\}$ Keplerate spheres and $\{Mo_{154}\}$ wheel architectures.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-project-4",
