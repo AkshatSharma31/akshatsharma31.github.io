@@ -60,7 +60,6 @@ layout: default
         {% comment %} RenderCV format {% endcomment %}
         {% assign cv = site.data.cv.cv %}
 
-        <!-- Header/Contact Information -->
         {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Contact Information</h3>
@@ -112,7 +111,6 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- Summary -->
         {% if cv.summary %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Professional Summary</h3>
@@ -120,7 +118,6 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- RenderCV Sections - Merge Experience and Volunteer -->
         {% comment %} First, combine Experience and Volunteer entries {% endcomment %}
         {% assign empty_array = '' | split: ',' %}
         {% assign exp = cv.sections.Experience | default: empty_array %}
@@ -160,7 +157,7 @@ layout: default
               {% elsif section_title == 'Publications' %}
                 {% assign entries = section_entries %}
                 {% include cv/publications.liquid %}
-              {% elsif section_title == 'Skills' %}
+              {% elsif section_title == 'Skills' or section_title == 'Positions of Responsibility' %}
                 {% assign entries = section_entries %}
                 {% include cv/skills.liquid %}
               {% elsif section_title == 'Languages' %}
@@ -197,7 +194,6 @@ layout: default
                   {% endfor %}
                 </ul>
               {% else %}
-                <!-- Generic section -->
                 {% for entry in section_entries %}
                   {% if entry.bullet %}
                     <ul class="card-text font-weight-light list-group list-group-flush">
@@ -217,7 +213,6 @@ layout: default
       {% elsif render_jsonresume and site.data.resume %}
         {% comment %} JSONResume format {% endcomment %}
 
-        <!-- Contact Information -->
         {% if site.data.resume.basics %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Contact Information</h3>
@@ -270,7 +265,6 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- Summary -->
         {% if site.data.resume.basics.summary %}
           <div class="card mt-3 p-3">
             <h3 class="card-title font-weight-medium">Professional Summary</h3>
@@ -278,7 +272,6 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- JSONResume Sections - Merge work and volunteer into Experience -->
         {% assign empty_array = '' | split: ',' %}
         {% assign work = site.data.resume.work | default: empty_array %}
         {% assign vol = site.data.resume.volunteer | default: empty_array %}
@@ -294,7 +287,6 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- Education -->
         {% if site.data.resume.education.size > 0 %}
           <a class="anchor" id="education"></a>
           <div class="card mt-3 p-3">
@@ -306,7 +298,6 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- Awards -->
         {% if site.data.resume.awards.size > 0 %}
           <a class="anchor" id="awards"></a>
           <div class="card mt-3 p-3">
@@ -318,7 +309,6 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- Publications -->
         {% if site.data.resume.publications.size > 0 %}
           <a class="anchor" id="publications"></a>
           <div class="card mt-3 p-3">
@@ -330,7 +320,6 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- Skills -->
         {% if site.data.resume.skills.size > 0 %}
           <a class="anchor" id="skills"></a>
           <div class="card mt-3 p-3">
@@ -342,7 +331,17 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- Languages -->
+        {% if site.data.resume.positions_of_responsibility.size > 0 %}
+          <a class="anchor" id="positions-of-responsibility"></a>
+          <div class="card mt-3 p-3">
+            <h3 class="card-title font-weight-medium">Positions of Responsibility</h3>
+            <div>
+              {% assign entries = site.data.resume.positions_of_responsibility %}
+              {% include cv/skills.liquid %}
+            </div>
+          </div>
+        {% endif %}
+
         {% if site.data.resume.languages.size > 0 %}
           <a class="anchor" id="languages"></a>
           <div class="card mt-3 p-3">
@@ -354,7 +353,6 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- Interests -->
         {% if site.data.resume.interests.size > 0 %}
           <a class="anchor" id="interests"></a>
           <div class="card mt-3 p-3">
@@ -366,7 +364,6 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- Certificates -->
         {% if site.data.resume.certificates.size > 0 %}
           <a class="anchor" id="certificates"></a>
           <div class="card mt-3 p-3">
@@ -378,7 +375,6 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- Projects -->
         {% if site.data.resume.projects.size > 0 %}
           <a class="anchor" id="projects"></a>
           <div class="card mt-3 p-3">
@@ -390,7 +386,6 @@ layout: default
           </div>
         {% endif %}
 
-        <!-- References -->
         {% if site.data.resume.references.size > 0 %}
           <a class="anchor" id="references"></a>
           <div class="card mt-3 p-3">
