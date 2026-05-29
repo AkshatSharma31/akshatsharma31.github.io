@@ -3,7 +3,7 @@ layout: page
 title: Polyoxometalate Cluster Architectures
 description: Synthetic execution, structural profiling, and spectroscopic characterization of giant $\{Mo_{132}\}$ Keplerate spheres and $\{Mo_{154}\}$ wheel architectures.
 importance: 1
-img: assets/img
+img: assets/img/pro3.png
 category: Experimental Materials & Synthesis
 ---
 
