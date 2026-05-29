@@ -3,6 +3,7 @@ layout: page
 title: NHC-Based Porous Organic Polymers
 description: Synthetic design and isolation of N-Heterocyclic Carbene-based Porous Organic Polymers (NHC-POP) for carbon capture.
 importance: 3
+img: assets/img/pro5.png
 category: Experimental Materials & Synthesis
 ---
 
