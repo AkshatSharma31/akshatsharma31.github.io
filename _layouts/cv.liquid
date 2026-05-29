@@ -178,6 +178,24 @@ layout: default
               {% elsif section_title == 'References' %}
                 {% assign entries = section_entries %}
                 {% include cv/references.liquid %}
+              {% elsif section_title == 'Relevant Coursework' %}
+                <ul class="card-text font-weight-light list-group list-group-flush">
+                  {% for course in section_entries %}
+                    <li class="list-group-item" style="border: none; padding-left: 0; padding-right: 0;">
+                      <div class="row">
+                        <div class="col-xs-2 col-sm-2 col-md-2 text-center" style="width: 75px;">
+                          <span class="badge font-weight-bold text-uppercase align-middle" style="min-width: 75px; background-color: var(--global-theme-color) !important; color: var(--global-bg-color) !important;">
+                            Course
+                          </span>
+                        </div>
+                        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+                          <h6 class="title font-weight-bold ml-1 ml-md-4" style="margin-bottom: 0.25rem;">{{ course.name }}</h6>
+                          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic; color: var(--global-text-color-light);">{{ course.keywords }}</h6>
+                        </div>
+                      </div>
+                    </li>
+                  {% endfor %}
+                </ul>
               {% else %}
                 <!-- Generic section -->
                 {% for entry in section_entries %}
@@ -336,28 +354,6 @@ layout: default
           </div>
         {% endif %}
 
-        <div class="card mt-3 p-3">
-  <h3 class="card-title font-weight-medium">Relevant Coursework</h3>
-  <div>
-    <ul class="card-text font-weight-light list-group list-group-flush">
-      {% for course in site.data.cv.sections["Relevant Coursework"] %}
-        <li class="list-group-item">
-          <div class="row">
-            <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px;">
-              <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px;">
-                Course
-              </span>
-            </div>
-            <div class="col-xs-10 cl-sm-10 col-md-10 mt-2 mt-md-0">
-              <h6 class="title font-weight-bold ml-1 ml-md-4">{{ course.name }}</h6>
-              <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic;">{{ course.keywords }}</h6>
-            </div>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
         <!-- Interests -->
         {% if site.data.resume.interests.size > 0 %}
           <a class="anchor" id="interests"></a>
