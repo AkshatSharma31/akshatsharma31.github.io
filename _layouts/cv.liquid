@@ -163,9 +163,6 @@ layout: default
               {% elsif section_title == 'Skills' %}
                 {% assign entries = section_entries %}
                 {% include cv/skills.liquid %}
-              {% elsif section_title == 'Positions of Responsibility' %}
-                {% assign entries = section_entries %}
-                {% include cv/skills.liquid %}
               {% elsif section_title == 'Languages' %}
                 {% assign entries = section_entries %}
                 {% include cv/languages.liquid %}
@@ -345,17 +342,24 @@ layout: default
           </div>
         {% endif %}
     
-        <!-- Positions of Responsibility -->
-        {% if site.data.resume.positions_of_responsibility %}
-          <a class="anchor" id="positions-of-responsibility"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Positions of Responsibility</h3>
-            <div>
-              {% assign entries = site.data.resume.positions_of_responsibility %}
-              {% include cv/skills.liquid %}
-            </div>
-          </div>
-        {% endif %}
+       {% else %}
+        <p>No CV data found. Please configure either RenderCV (cv.yml) or JSONResume (resume.json) data.</p>
+      {% endif %}
+
+      <div class="card mt-3 p-3">
+        <h3 class="card-title font-weight-medium">Positions of Responsibility</h3>
+        <div class="card-text font-weight-light mt-2" style="font-size: 0.95rem;">
+          <h6 class="title font-weight-bold" style="margin-bottom: 0.25rem; color: var(--global-text-color);">Treasurer, IISER Kolkata Tennis Club</h6>
+          <ul class="ml-3 mt-2" style="padding-left: 15px; list-style-type: disc;">
+            <li><strong>Budget Planning:</strong> Co-drafted the annual club budget in coordination with the Club Convenor and Secretary.</li>
+            <li class="mt-1"><strong>Operations & Logistics:</strong> Organized routine practice sessions and coordinated the scheduling and execution of club matches and tournaments.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </article>
+</div>
 
         <!-- Languages -->
         {% if site.data.resume.languages.size > 0 %}
