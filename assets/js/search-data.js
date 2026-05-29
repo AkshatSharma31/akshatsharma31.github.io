@@ -409,9 +409,9 @@ ninja.data = [{
           description: "Synthetic execution, structural profiling, and spectroscopic characterization of giant $\{Mo_{132}\}$ Keplerate spheres and $\{Mo_{154}\}$ wheel architectures.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-polymorphism-amp-phase-transformations",
+          title: 'Polymorphism &amp;amp; Phase Transformations',
+          description: "Tracking solid-state thermal phase transitions and kinetic profiles of active pharmaceutical ingredients.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
             },},{id: "projects-project-5",
