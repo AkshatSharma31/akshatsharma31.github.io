@@ -3,7 +3,7 @@ layout: page
 title: Polymorphism & Phase Transformations
 description: Quantitative evaluation of the solid-state crystallization kinetics, lattice metrics, and phase profiles of active pharmaceutical ingredients.
 importance: 2
-img: assets/img
+img: assets/img/Optimised_structure.png
 category: Experimental Materials & Synthesis
 ---
 
