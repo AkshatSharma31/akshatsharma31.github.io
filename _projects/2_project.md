@@ -3,7 +3,7 @@ layout: page
 title: DFT Analysis of Zintl Clusters
 description: Independent quantum chemical investigation into the bonding architectures of heteroatomic Zintl cages, validated by TUM.
 importance: 2
-
+img: assets/img/pro2.png
 category: Computational & Theoretical Chemistry
 ---
 
