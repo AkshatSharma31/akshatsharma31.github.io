@@ -8,7 +8,7 @@ category: Experimental Materials & Synthesis
 ---
 
 ### Project Overview
-This research targets the controlled aqueous self-assembly and molecular architecture of nanometer-scale metal oxide clusters. The project spans the precision synthesis, structural fragment mapping, and spectroscopic validation of giant molybdenum-based polyoxometalates (POMs), bridging the gap between molecular coordination chemistry and solid-state materials design.
+This research, conducted under the supervision of Prof. Soumyajit Roy, targets the controlled aqueous self-assembly and molecular architecture of nanometer-scale metal oxide clusters. The project spans the precision synthesis, structural fragment mapping, and spectroscopic validation of giant molybdenum-based polyoxometalates (POMs), bridging the gap between molecular coordination chemistry and solid-state materials design.
 
 ### Experimental Execution & Characterization
 
