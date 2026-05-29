@@ -399,9 +399,9 @@ ninja.data = [{
           description: "Introducing Aρ, a physically grounded quantum descriptor for molecular complexity derived from electron-density topology graphs and assembly constraints.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-dft-analysis-of-zintl-clusters",
+          title: 'DFT Analysis of Zintl Clusters',
+          description: "Independent quantum chemical investigation into the bonding architectures of heteroatomic Zintl cages, validated by TUM.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
             },},{id: "projects-project-3-with-very-long-name",
