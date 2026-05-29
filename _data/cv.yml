@@ -9,7 +9,7 @@ cv:
   sections:
     Education:
       - institution: Indian Institute of Science Education and Research (IISER) Kolkata
-        location: Mohanpur, West Bengal, India
+        location: West Bengal, India
         area: Chemical Sciences
         studyType: BS-MS Dual Degree
         start_date: 2023
@@ -18,41 +18,41 @@ cv:
           - "**National Level Exams Qualified:** Joint Entrance Examination (Advanced) • Joint Entrance Examination (Mains) • IISER Aptitude Test (IAT)"
 
       - institution: Baluni Public School
-        location: Dehradun, Uttarakhand, India
+        location: Uttarakhand, India
         area: CBSE Class XII
         studyType: High School Diploma
-        start_date: 2023
+        start_date: 2022
         end_date: 2023
         score: "88.8%"
 
       - institution: Baluni Public School
-        location: Dehradun, Uttarakhand, India
+        location: Uttarakhand, India
         area: CBSE Class X
         studyType: Secondary School Certificate
-        start_date: 2021
+        start_date: 2020
         end_date: 2021
         score: "88.8%"
 
     Experience:
       - company: IISER Kolkata
         position: Undergraduate Researcher
-        location: Mohanpur, West Bengal, India
+        location: West Bengal, India
         start_date: 2023-12
         end_date: Present
         summary: "Supervisor: Dr. Soumyajit Roy"
         highlights:
           - >
-            Synthesized the giant polyoxometalate cluster {Mo₁₃₂} keplerates and {Mo₁₅₄} giant blue ring using self-assembly in aqueous medium and confirmed the formation using powder X-ray diffraction, UV-vis spectroscopy, and Raman spectroscopy.
+            Synthesized the giant polyoxometalate cluster {Mo₁₃₂} keplerates and {Mo₁₅₄} giant blue ring using self-assembly in aqueous medium and confirmed the formation using UV-vis spectroscopy and Raman spectroscopy.
           - >
             Conducted a detailed study of the polymorphism and solid-state phase transitions of acetaminophen (paracetamol).
           - >
-            Synthesized metastable Paracetamol Form II (orthorhombic) and characterized the phase transformation using Single Crystal XRD.
+            Synthesized metastable Paracetamol Form II (orthorhombic) and characterized the phase transformation using X-Ray Diffraction.
           - >
             Synthesized soft-oxometalates for CO₂ reduction and water oxidation catalysis.
           - >
             Analyzed crystal formation as a function of the crystallization medium and temperature by systematically varying ibuprofen concentration, DMSO content, and thermal conditions.
           - >
-            Trained in advanced crystallographic refinement protocols (Müller lineage standards).
+            Trained in advanced crystallographic refinement protocols (Olex 2).
 
       - company: IIT Ropar
         position: Research Intern
@@ -73,7 +73,7 @@ cv:
         summary: "Selected among the top 5,000 students across India for academic excellence."
 
     Publications:
-      - title: "Quantum assembly theory defines molecular complexity from electron density"
+      - title: "Quantum assembly theory defines molecular complexity from electron density topology"
         authors:
           - Akshat Sharma
         publisher: ChemRxiv
