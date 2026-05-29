@@ -404,9 +404,9 @@ ninja.data = [{
           description: "Independent quantum chemical investigation into the bonding architectures of heteroatomic Zintl cages, validated by TUM.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+            },},{id: "projects-polyoxometalate-cluster-architectures",
+          title: 'Polyoxometalate Cluster Architectures',
+          description: "Synthetic execution, structural profiling, and spectroscopic characterization of giant {Mo132} Keplerate spheres and {Mo154} wheel architectures.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-project-4",
