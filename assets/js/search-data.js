@@ -414,9 +414,9 @@ ninja.data = [{
           description: "Quantitative evaluation of the solid-state crystallization kinetics, lattice metrics, and phase profiles of active pharmaceutical ingredients.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+            },},{id: "projects-nhc-based-porous-organic-polymers",
+          title: 'NHC-Based Porous Organic Polymers',
+          description: "Synthetic design and isolation of N-Heterocyclic Carbene-based Porous Organic Polymers (NHC-POP) for carbon capture.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
             },},{id: "projects-project-6",
