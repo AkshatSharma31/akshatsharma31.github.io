@@ -1,81 +1,19 @@
 ---
 layout: page
-title: project 3 with very long name
-description: a project that redirects to another website
-img: assets/img/7.jpg
-redirect: https://unsplash.com
-importance: 3
-category: work
+title: Polyoxometalate Cluster Architectures
+description: Synthetic execution, structural profiling, and spectroscopic characterization of giant {Mo132} Keplerate spheres and {Mo154} wheel architectures.
+importance: 1
+category: Experimental Materials & Synthesis
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+### Project Overview
+This research targets the controlled aqueous self-assembly and molecular architecture of nanometer-scale metal oxide clusters. The project spans the precision synthesis, structural fragment mapping, and spectroscopic validation of giant molybdenum-based polyoxometalates (POMs), bridging the gap between molecular coordination chemistry and solid-state materials design.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+### Experimental Execution & Characterization
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+* **Supramolecular Synthesis:** Directed the aqueous self-assembly of giant polyoxometalates via strict thermodynamic and pH-controlled environments. Successfully isolated both the spherical {Mo132} Keplerates and the highly reduced {Mo154} giant blue rings in high chemical purity.
+* **Structural Sub-Unit Mapping:** Evaluated the architectural frameworks of both clusters, dissecting their complex topologies into discrete building-block hierarchies:
+  * **{Mo132} Keplerate Spheres:** Characterized the high-symmetry Icosahedral (Ih) nanocapsules, verifying a structure systematically constructed from **12 pentagonal {Mo(Mo)5} building units** linked together via **30 dimeric {Mo2} spacers**.
+  * **{Mo154} Giant Blue Rings:** Mapped the large wheel configuration to confirm a macro-cyclic arrangement driven by **14 condensing {Mo11} building blocks**, further tracing their sub-component topology to distinct **{Mo2}, {Mo8}, and {Mo1} fragments**.
+* **Spectroscopic Profiling:** Performed comprehensive structural and spectroscopic characterization on both macro-clusters. Utilized UV-Vis spectroscopy to track the characteristic mixed-valence $Mo^{\text{V}}/Mo^{\text{VI}}$ intervalence charge transfer (IVCT) bands alongside complementary Raman spectroscopy to map the signature metal-oxygen ($Mo=O$ and $Mo-O-Mo$) vibrational fingerprints.
+* **Photocatalytic Investigations (Ongoing):** Currently evaluating the photocatalytic behavior, multi-electron reduction dynamics, and localized charge-transfer pathways of the active $\{Mo_{154}\}$ giant rings for green catalytic configurations.
