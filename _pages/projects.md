@@ -5,6 +5,7 @@ permalink: /projects/
 description: A collection of research projects bridging materials synthesis and theoretical chemistry.
 nav: true
 nav_order: 3
+display_categories: ["Computational & Theoretical Chemistry", "Experimental Materials & Synthesis"]
 horizontal: true
 ---
 
