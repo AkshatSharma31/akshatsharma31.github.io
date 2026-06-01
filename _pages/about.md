@@ -6,7 +6,7 @@ subtitle: Researcher at IISER Kolkata | Specializing in Theoretical & Inorganic 
 
 profile:
   align: right
-  image: profile.jpg
+  image: pro1.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>IISER Kolkata</p>
