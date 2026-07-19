@@ -2,8 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Researcher at IISER Kolkata | Specializing in Theoretical & Inorganic Chemistry.
-
+subtitle: Researcher at IISER Kolkata | Specializing in Chemical Physics, Information-theoretic Chemistry, and Complex Systems
 profile:
   align: right
   image: pro1.jpg
