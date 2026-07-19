@@ -109,6 +109,14 @@ cv:
         summary: >
           Introduces the Quantum Assembly Index (Aρ), an information-theoretic measure of molecular organization derived directly from quantum electron density topology.
 
+      - title: A Unified Discrete and Continuous Theory of Core--Halo Complexity Maximizers
+        authors:
+          - Akshat Sharma
+        publisher: Manuscript under preparation
+        releaseDate:
+        url: 
+        summary: >
+          
     Skills:
       - name: Research Methods
         icon: fa-solid fa-atom
