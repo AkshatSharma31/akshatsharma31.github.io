@@ -6,10 +6,11 @@ cv:
   image: ""
   summary: >
     I am a fourth-year BS-MS student at the Indian Institute of Science Education and Research (IISER) Kolkata whose research lies at the intersection of chemistry, statistical mechanics, information theory, and applied mathematics. My work focuses on developing theoretical frameworks for understanding molecular organization, self-assembly, complexity, and the emergence of living matter using chemically realizable self-assembling systems as experimentally accessible model platforms. My long-term objective is to uncover universal principles governing organization across chemistry, physics, and biology.
-  sections:
-    Research Interests:
-      - name: Fundamental Research Areas
-        keywords: >
+
+sections:
+  Research Interests:
+    - name: Fundamental Research Areas
+      keywords: >
         Statistical Mechanics
         Complex Systems
         Information Theory
@@ -20,125 +21,127 @@ cv:
         Chemical Physics
         Polyoxometalates
         Quantum Chemical Topology
-      
-    Education:
-      - institution: Indian Institute of Science Education and Research (IISER) Kolkata
-        location: West Bengal, India
-        area: Chemical Sciences
-        studyType: BS-MS Dual Degree
-        start_date: 2023
-        end_date: 2028
-        highlights:
-          - "**National Level Exams Qualified:** Joint Entrance Examination (Advanced) • Joint Entrance Examination (Mains) • IISER Aptitude Test (IAT)"
 
-      - institution: Baluni Public School
-        location: Uttarakhand, India
-        area: CBSE Class XII
-        studyType: Senior Secondary School Certificate
-        start_date: 2022
-        end_date: 2023
-        score: "88.8%"
+  Education:
+    - institution: Indian Institute of Science Education and Research (IISER) Kolkata
+      location: West Bengal, India
+      area: Chemical Sciences
+      studyType: BS-MS Dual Degree
+      start_date: 2023
+      end_date: 2028
+      highlights:
+        - "**National Level Exams Qualified:** Joint Entrance Examination (Advanced) • Joint Entrance Examination (Mains) • IISER Aptitude Test (IAT)"
 
-      - institution: Baluni Public School
-        location: Uttarakhand, India
-        area: CBSE Class X
-        studyType: Secondary School Certificate
-        start_date: 2020
-        end_date: 2021
-        score: "88.8%"
+    - institution: Baluni Public School
+      location: Uttarakhand, India
+      area: CBSE Class XII
+      studyType: Senior Secondary School Certificate
+      start_date: 2022
+      end_date: 2023
+      score: "88.8%"
 
-    Experience:
-       - company: Independent Research
-        position: Independent Researcher
-        location: India
-        start_date: 2026-01
-        end_date: Present
-        highlights:
-           - >
-             Developed the Quantum Assembly Index (QAI), an information-theoretic descriptor of molecular organization derived directly from quantum electron density using QTAIM.
-           - >
-             Developed the Core–Halo Theorem, establishing a universal organizational structure for maximally complex probability distributions within generalized statistical complexity.
-           - >
-             Performed density functional theory (DFT) calculations using ORCA to investigate the electronic structure and bonding of homoatomic and heteroatomic Zintl clusters.
-             
-      - company: IISER Kolkata
-        position: Undergraduate Researcher
-        location: West Bengal, India
-        start_date: 2023-12
-        end_date: Present
-        summary: "Supervisor: Dr. Soumyajit Roy"
-        highlights:
-          - >
-            Synthesized the giant polyoxometalate cluster {Mo₁₃₂} keplerates and {Mo₁₅₄} giant blue ring using self-assembly in aqueous medium and confirmed the formation using UV-vis spectroscopy and Raman spectroscopy.
-          - >
-            Conducted a detailed study of the polymorphism and solid-state phase transitions of acetaminophen (paracetamol).
-          - >
-            Synthesized metastable Paracetamol Form II (orthorhombic) and characterized the phase transformation using X-Ray Diffraction.
-          - >
-            Synthesized soft-oxometalates for CO₂ reduction and water oxidation catalysis.
-          - >
-            Analyzed crystal formation as a function of the crystallization medium and temperature by systematically varying ibuprofen concentration, DMSO content, and thermal conditions.
-          - >
-            Trained in advanced crystallographic refinement protocols (Olex 2).
+    - institution: Baluni Public School
+      location: Uttarakhand, India
+      area: CBSE Class X
+      studyType: Secondary School Certificate
+      start_date: 2020
+      end_date: 2021
+      score: "88.8%"
 
-      - company: IIT Ropar
-        position: Research Intern
-        location: Punjab, India
-        start_date: 2025-05
-        end_date: 2025-07
-        summary: "Supervisor: Dr. C.M. Nagaraja"
-        highlights:
-          - >
-            Gained foundational knowledge of Metal-Organic Frameworks (MOFs) and Covalent Organic Frameworks (COFs) through an extensive review of the scientific literature.
-          - >
-            Synthesized sterically demanding N-heterocyclic carbene (NHC) ligands and their organometallic complexes, confirming structural integrity via 1H NMR spectroscopy.
-    
-    Awards:
-      - title: Reliance Foundation Scholarship
-        date: 2023
-        awarder: Reliance Foundation
-        summary: "Selected among the top 5,000 students across India for academic excellence."
+  Experience:
+    - company: Independent Research
+      position: Independent Researcher
+      location: India
+      start_date: 2026-01
+      end_date: Present
+      highlights:
+        - >
+          Developed the Quantum Assembly Index (QAI), an information-theoretic descriptor of molecular organization derived directly from quantum electron density using QTAIM.
+        - >
+          Developed the Core–Halo Theorem, establishing a universal organizational structure for maximally complex probability distributions within generalized statistical complexity.
+        - >
+          Performed density functional theory (DFT) calculations using ORCA to investigate the electronic structure and bonding of homoatomic and heteroatomic Zintl clusters.
 
-    Publications:
-      - title: "Quantum assembly theory defines molecular complexity from electron density topology"
-        authors:
-          - Akshat Sharma
-        publisher: ChemRxiv
-        releaseDate: 2026-04-15
-        url: https://doi.org/10.26434/chemrxiv.15000864/v3
-        summary: "Introduces the Quantum Assembly Index (Aρ), an information-theoretic measure of molecular organization derived directly from quantum electron density topology."
+    - company: IISER Kolkata
+      position: Undergraduate Researcher
+      location: West Bengal, India
+      start_date: 2023-12
+      end_date: Present
+      summary: "Supervisor: Dr. Soumyajit Roy"
+      highlights:
+        - >
+          Synthesized the giant polyoxometalate cluster {Mo₁₃₂} keplerates and {Mo₁₅₄} giant blue ring using self-assembly in aqueous medium and confirmed the formation using UV-vis spectroscopy and Raman spectroscopy.
+        - >
+          Conducted a detailed study of the polymorphism and solid-state phase transitions of acetaminophen (paracetamol).
+        - >
+          Synthesized metastable Paracetamol Form II (orthorhombic) and characterized the phase transformation using X-Ray Diffraction.
+        - >
+          Synthesized soft-oxometalates for CO₂ reduction and water oxidation catalysis.
+        - >
+          Analyzed crystal formation as a function of the crystallization medium and temperature by systematically varying ibuprofen concentration, DMSO content, and thermal conditions.
+        - >
+          Trained in advanced crystallographic refinement protocols (Olex 2).
 
-    Skills:
-     - name: Research Methods
-       icon: fa-solid fa-atom
-       keywords: >
-       Statistical Complexity,
-       Information-Theoretic Chemistry,
-       Density Functional Theory,
-       QTAIM,
-       Computational Chemistry,
-       Polyoxometalates,
-       Self-Assembly,
-       Single-Crystal Crystallography,
-       Scientific Computing
+    - company: IIT Ropar
+      position: Research Intern
+      location: Punjab, India
+      start_date: 2025-05
+      end_date: 2025-07
+      summary: "Supervisor: Dr. C.M. Nagaraja"
+      highlights:
+        - >
+          Gained foundational knowledge of Metal-Organic Frameworks (MOFs) and Covalent Organic Frameworks (COFs) through an extensive review of the scientific literature.
+        - >
+          Synthesized sterically demanding N-heterocyclic carbene (NHC) ligands and their organometallic complexes, confirming structural integrity via 1H NMR spectroscopy.
 
-    Positions of Responsibility:
-      - company: IISER Kolkata Tennis Club
-        position: Treasurer
-        location: West Bengal, India
-        start_date: 2024-08
-        end_date: 2025-04
-        
-    Languages:
-      - name: English
-        summary: "Professional working proficiency"
-      - name: Hindi
-        summary: "Native speaker"
+  Awards:
+    - title: Reliance Foundation Scholarship
+      date: 2023
+      awarder: Reliance Foundation
+      summary: "Selected among the top 5,000 students across India for academic excellence."
 
-    Relevant Coursework:
-      - name: Chemistry
-        keywords: "Phase Equilibrium Thermodynamics, Quantum Chemistry, Coordination Chemistry"
-      - name: Mathematics
-        keywords: "Linear Algebra, Group Theory, Probability and Statistics"
-      - name: Computing
-        keywords: "Data Structures and Algorithms (DSA), Programming in Python"
+  Publications:
+    - title: "Quantum assembly theory defines molecular complexity from electron density topology"
+      authors:
+        - Akshat Sharma
+      publisher: ChemRxiv
+      releaseDate: 2026-04-15
+      url: https://doi.org/10.26434/chemrxiv.15000864/v3
+      summary: "Introduces the Quantum Assembly Index (Aρ), an information-theoretic measure of molecular organization derived directly from quantum electron density topology."
+
+  Skills:
+    - name: Research Methods
+      icon: fa-solid fa-atom
+      keywords: >
+        Statistical Complexity,
+        Information-Theoretic Chemistry,
+        Density Functional Theory,
+        QTAIM,
+        Computational Chemistry,
+        Polyoxometalates,
+        Self-Assembly,
+        Single-Crystal Crystallography,
+        Scientific Computing
+
+  Positions of Responsibility:
+    - company: IISER Kolkata Tennis Club
+      position: Treasurer
+      location: West Bengal, India
+      start_date: 2024-08
+      end_date: 2025-04
+
+  Languages:
+    - name: English
+      summary: "Professional working proficiency"
+    - name: Hindi
+      summary: "Native speaker"
+
+  Relevant Coursework:
+    - name: Chemistry
+      keywords: "Phase Equilibrium Thermodynamics, Quantum Chemistry, Coordination Chemistry"
+
+    - name: Mathematics
+      keywords: "Linear Algebra, Group Theory, Probability and Statistics"
+
+    - name: Computing
+      keywords: "Data Structures and Algorithms (DSA), Programming in Python"
