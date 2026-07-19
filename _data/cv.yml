@@ -113,7 +113,9 @@ cv:
        authors:
          - Akshat Sharma
        publisher: Manuscript under preparation
-          
+       releaseDate: 2026-07
+       summary: >
+         A unified statistical-mechanical framework for characterizing Core–Halo complexity maximizers.
     Skills:
       - name: Research Methods
         icon: fa-solid fa-atom
