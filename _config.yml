@@ -33,8 +33,8 @@ email: as23ms078@iiserkol.ac.in
 # Theme
 # -----------------------------------------------------------------------------
 
-repo_theme_light: default
-repo_theme_dark: dark
+repo_theme_light: light
+repo_theme_dark: default
 repo_trophies:
   enabled: true
   theme_light: flat
