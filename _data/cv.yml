@@ -5,8 +5,23 @@ cv:
   location: Kolkata, India
   image: ""
   summary: >
-    I am a fourth-year researcher bridging macro-scale inorganic materials discovery with micro-scale quantum chemical insights. Equipped with an interdisciplinary toolkit spanning cluster self-assembly, single-crystal X-ray refinement, electronic structure modeling, and Quantum Assembly Theory. Driven by a passion for exploring molecular complexity and characterizing innovative, structurally demanding catalysts targeted at green energy systems and carbon capture.
+   summary: >
+  I am a fourth-year BS-MS student at the Indian Institute of Science Education and Research (IISER) Kolkata whose research lies at the intersection of chemistry, statistical mechanics, information theory, and applied mathematics. My work focuses on developing theoretical frameworks for understanding molecular organization, self-assembly, complexity, and the emergence of living matter using chemically realizable self-assembling systems as experimentally accessible model platforms. My long-term objective is to uncover universal principles governing organization across chemistry, physics, and biology.
   sections:
+    Research Interests:
+  - name: Fundamental Research Areas
+    keywords: >
+     Statistical Mechanics
+     Complex Systems
+     Information Theory
+     Self-Assembly
+     Molecular Organization
+     Active Matter
+     Origin of Life
+     Chemical Physics
+     Polyoxometalates
+     Quantum Chemical Topology
+      
     Education:
       - institution: Indian Institute of Science Education and Research (IISER) Kolkata
         location: West Bengal, India
@@ -34,6 +49,19 @@ cv:
         score: "88.8%"
 
     Experience:
+       - company: Independent Research
+        position: Independent Researcher
+        location: India
+        start_date: 2026-01
+        end_date: Present
+        highlights:
+           - >
+             Developed the Quantum Assembly Index (QAI), an information-theoretic descriptor of molecular organization derived directly from quantum electron density using QTAIM.
+           - >
+             Developed the Core–Halo Theorem, establishing a universal organizational structure for maximally complex probability distributions within generalized statistical complexity.
+           - >
+             Performed density functional theory (DFT) analysis using ORCA to investigate electronic structure and molecular organization of Zintl Clusters.
+             
       - company: IISER Kolkata
         position: Undergraduate Researcher
         location: West Bengal, India
@@ -65,7 +93,7 @@ cv:
             Gained foundational knowledge of Metal-Organic Frameworks (MOFs) and Covalent Organic Frameworks (COFs) through an extensive review of the scientific literature.
           - >
             Synthesized sterically demanding N-heterocyclic carbene (NHC) ligands and their organometallic complexes, confirming structural integrity via 1H NMR spectroscopy.
-
+    
     Awards:
       - title: Reliance Foundation Scholarship
         date: 2023
@@ -79,28 +107,21 @@ cv:
         publisher: ChemRxiv
         releaseDate: 2026-04-15
         url: https://doi.org/10.26434/chemrxiv.15000864/v3
-        summary: "Pioneered a framework connecting mathematical assembly frameworks with structural electron density topology mapping."
+        summary: "Introduces the Quantum Assembly Index (Aρ), an information-theoretic measure of molecular organization derived directly from quantum electron density topology."
 
     Skills:
-      - name: Crystallography
-        icon: fa-solid fa-cube
-        keywords: "Structure solution and refinement (Olex2), Data reduction and unit cell determination (CrysAlisPro), Packing analysis (Mercury)"
-
-      - name: Spectroscopy
-        icon: fa-solid fa-chart-line
-        keywords: "Operation and analysis of UV-Vis, FT-IR, and Raman spectroscopy. Data analysis of Powder XRD (Phase identification) and Single Crystal XRD"
-
-      - name: Computational Chemistry
-        icon: fa-solid fa-terminal
-        keywords: "DFT geometry optimization and thermodynamic analysis (Enthalpy, Gibbs Free Energy) using ORCA. Topological Analysis using Multiwfn. Input generation (Avogadro) and data plotting (Origin)"
-
-      - name: Synthesis
-        icon: fa-solid fa-flask
-        keywords: "Organic ligand precursors (Imidazolium salts), Solvothermal synthesis (POMs)"
-
-      - name: Programming & Tools
-        icon: fa-solid fa-code
-        keywords: "Python, C, LaTeX, Linux"
+  - name: Research Methods
+    icon: fa-solid fa-atom
+    keywords: >
+      Statistical Complexity,
+      Information-Theoretic Chemistry,
+      Density Functional Theory,
+      QTAIM,
+      Computational Chemistry,
+      Polyoxometalates,
+      Self-Assembly,
+      Single-Crystal Crystallography,
+      Scientific Computing
 
     Positions of Responsibility:
       - company: IISER Kolkata Tennis Club
@@ -108,10 +129,7 @@ cv:
         location: West Bengal, India
         start_date: 2024-08
         end_date: 2025-04
-        highlights:
-          - "Budget Planning: Co-drafted the annual club budget in coordination with the Club Convenor and Secretary."
-          - "Operations & Logistics: Organized routine practice sessions and coordinated the scheduling and execution of club matches and tournaments."
-
+        
     Languages:
       - name: English
         summary: "Professional working proficiency"
@@ -119,9 +137,9 @@ cv:
         summary: "Native speaker"
 
     Relevant Coursework:
-      - name: Inorganic & Materials
-        keywords: "Coordination Chemistry, Molecular Symmetry and Character Tables, Main Group Elements"
-      - name: Physical & Analytical
-        keywords: "Phase Equilibrium Thermodynamics, Quantum Chemistry, Fundamentals of Spectroscopy (IR/Raman/Electronic), Instrumentation in Chemistry"
-      - name: Mathematics & CS
-        keywords: "Linear Algebra, Group Theory, Probability and Statistics, Data Structures and Algorithms (DSA), Programming in Python"
+      - name: Chemistry
+        keywords: "Phase Equilibrium Thermodynamics, Quantum Chemistry, Coordination Chemistry"
+      - name: Mathematics
+        keywords: "Linear Algebra, Group Theory, Probability and Statistics"
+      - name: Computing
+        keywords: "Data Structures and Algorithms (DSA), Programming in Python"
