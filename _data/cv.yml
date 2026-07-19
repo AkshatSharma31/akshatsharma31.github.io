@@ -10,16 +10,16 @@ cv:
     Research Interests:
       - name: Fundamental Research Areas
         keywords: >
-          Statistical Mechanics
-          Complex Systems
-          Information Theory
-          Self-Assembly
-          Molecular Organization
-          Active Matter
-          Origin of Life
-          Chemical Physics
-          Polyoxometalates
-          Quantum Chemical Topology
+        Statistical Mechanics
+        Complex Systems
+        Information Theory
+        Self-Assembly
+        Molecular Organization
+        Active Matter
+        Origin of Life
+        Chemical Physics
+        Polyoxometalates
+        Quantum Chemical Topology
       
     Education:
       - institution: Indian Institute of Science Education and Research (IISER) Kolkata
@@ -59,7 +59,7 @@ cv:
            - >
              Developed the Core–Halo Theorem, establishing a universal organizational structure for maximally complex probability distributions within generalized statistical complexity.
            - >
-             Performed density functional theory (DFT) analysis using ORCA to investigate electronic structure and molecular organization of Zintl Clusters.
+             Performed density functional theory (DFT) calculations using ORCA to investigate the electronic structure and bonding of homoatomic and heteroatomic Zintl clusters.
              
       - company: IISER Kolkata
         position: Undergraduate Researcher
