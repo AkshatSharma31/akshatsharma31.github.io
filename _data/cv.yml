@@ -19,7 +19,8 @@ cv:
           - Origin of Life
           - Chemical Physics
           - Polyoxometalates
-          - Quantum Chemical Topology
+          - Softoxometalates
+          - Quantum Information Theory
 
     Education:
       - institution: Indian Institute of Science Education and Research (IISER) Kolkata
@@ -100,15 +101,23 @@ cv:
         summary: "Selected among the top 5,000 students across India for academic excellence."
 
     Publications:
-     - title: Quantum assembly theory defines molecular complexity from electron density topology
+     - title: Quantifying the physical complexity of chemical architectures through electron-density topology
        authors:
          - Akshat Sharma
        publisher: ChemRxiv
        releaseDate: 2026-04-15
-       url: https://doi.org/10.26434/chemrxiv.15000864/v3
+       url: https://doi.org/10.26434/chemrxiv.15000864/v4
        summary: >
          Introduces the Quantum Assembly Index (Aρ), an information-theoretic measure of molecular organization derived directly from quantum electron density topology.
-
+         
+      - title: A Unified Discrete and Continuous Theory of Core--Halo Complexity Maximizers
+        authors:
+          - Akshat Sharma
+        publisher: arXiv
+        releaseDate: 2026-07-20
+        url: http://arxiv.org/abs/2607.17907
+        summary: >
+          Developed a unified variational framework for generalized statistical complexity, proving the universal emergence of core–halo organization in complexity-maximizing systems.
     Skills:
       - name: Research Methods
         icon: fa-solid fa-atom
