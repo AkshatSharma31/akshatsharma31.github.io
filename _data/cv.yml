@@ -13,14 +13,8 @@ cv:
           - Statistical Mechanics
           - Complex Systems
           - Information Theory
-          - Self-Assembly
-          - Molecular Organization
-          - Active Matter
-          - Origin of Life
-          - Chemical Physics
-          - Polyoxometalates
-          - Softoxometalates
-          - Quantum Information Theory
+          - Biophysics
+          - Self-Organization
 
     Education:
       - institution: Indian Institute of Science Education and Research (IISER) Kolkata
@@ -55,6 +49,10 @@ cv:
         start_date: 2026-01
         end_date: Present
         highlights:
+          - >
+            Investigate a possible connection between thermodynamic variance extrema and complexity maximization in a confined logarithmic-potential model motivated by Manning condensation.
+          - >
+            Analysed lysozyme molecular-dynamics trajectories using GROMACS, tracking backbone RMSD and Ramachandran dihedral angles.
           - >
             Developed the Quantum Assembly Index (QAI), an information-theoretic descriptor of molecular organization derived directly from quantum electron density using QTAIM.
           - >
@@ -122,9 +120,9 @@ cv:
       - name: Research Methods
         icon: fa-solid fa-atom
         keywords: >
-          Statistical Complexity, Information-Theoretic Chemistry,
-          Density Functional Theory, QTAIM,
-          Computational Chemistry, Polyoxometalates,
+          Statistical mechanics, Information-Theoretic analysis,
+          Density Functional Theory, QTAIM, Molecular Dynamics,
+          Python, Polyoxometalates,
           Self-Assembly, Single-Crystal Crystallography,
           Scientific Computing
 
@@ -146,7 +144,7 @@ cv:
         keywords: "Phase Equilibrium Thermodynamics, Quantum Chemistry, Coordination Chemistry"
 
       - name: Mathematics
-        keywords: "Linear Algebra, Group Theory, Probability and Statistics"
+        keywords: "Linear Algebra, Group Theory, Probability and Statistics, Information Theory, Graph Theory"
 
       - name: Computing
-        keywords: "Data Structures and Algorithms (DSA), Programming in Python"
+        keywords: "Data Structures and Algorithms (DSA), Computer Architectures, Artificial Intelligence for Data Science."
