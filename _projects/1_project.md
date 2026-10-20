@@ -4,7 +4,7 @@ title: Quantum Assembly Theory
 description: Introducing Aρ, a physically grounded quantum descriptor for molecular complexity derived from electron-density topology graphs and assembly constraints.
 img: assets/img/Fig_final1.png
 importance: 2
-category: Computational & Theoretical Chemistry
+category: Computational & Theoretical Work
 ---
 
 ### Project Overview
