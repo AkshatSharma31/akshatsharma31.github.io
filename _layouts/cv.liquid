@@ -15,105 +15,86 @@ layout: default
         {% assign section_title = section[0] %}
         {% assign section_entries = section[1] %}
         
+        <a class="anchor" id="{{ section_title | slugify }}"></a>
         <div class="card mt-3 p-3">
           <h3 class="card-title font-weight-medium">{{ section_title }}</h3>
           <div>
-          {% for entry in section_entries %}
-            
-            {% if section_title == 'Summary' %}
+          
+          {% if section_title == 'Summary' %}
+            {% for entry in section_entries %}
               <p class="font-weight-light mb-0">{{ entry }}</p>
-            
-            {% elsif section_title == 'Experience' %}
-              <div class="row mb-3">
-                <div class="col-sm-3 text-sm-right text-muted">
-                  <small>{{ entry.date }}</small><br>
-                  <small>{{ entry.location }}</small>
-                </div>
-                <div class="col-sm-9">
-                  <h6 class="mb-0 font-weight-bold">{{ entry.company }}</h6>
-                  <p class="mb-1 font-italic">{{ entry.position }}</p>
-                  {% if entry.summary %}<p class="mb-1 small">{{ entry.summary }}</p>{% endif %}
-                  {% if entry.highlights %}
-                    <ul class="mb-0 small text-muted">
-                      {% for highlight in entry.highlights %}<li>{{ highlight }}</li>{% endfor %}
-                    </ul>
-                  {% endif %}
-                </div>
-              </div>
+            {% endfor %}
+          
+          {% else %}
+            <table class="table table-sm table-borderless cv-table mb-0">
+              {% for entry in section_entries %}
+                <tr>
+                  <!-- LEFT COLUMN: Dates or Labels -->
+                  <td class="p-1 pr-2 font-weight-bold text-muted" style="width: 25%; min-width: 120px; text-align: right;">
+                    <small>
+                      {% if entry.date %}{{ entry.date }}
+                      {% elsif entry.label %}{{ entry.label }}
+                      {% elsif entry.name and section_title != 'Awards' %}{{ entry.name }}
+                      {% endif %}
+                    </small>
+                    {% if entry.location and section_title != 'Education' %}<br><small class="font-weight-light">{{ entry.location }}</small>{% endif %}
+                  </td>
+                  
+                  <!-- RIGHT COLUMN: Content -->
+                  <td class="p-1 pl-2 font-weight-light text">
+                    
+                    {% if section_title == 'Experience' %}
+                      <h6 class="font-weight-bold mb-0">{{ entry.position }}</h6>
+                      <div class="font-italic">{{ entry.company }}</div>
+                      {% if entry.summary %}<div class="mt-1 small">{{ entry.summary }}</div>{% endif %}
+                      {% if entry.highlights %}
+                        <ul class="mt-1 mb-0 small">
+                          {% for highlight in entry.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                        </ul>
+                      {% endif %}
 
-            {% elsif section_title == 'Education' %}
-              <div class="row mb-3">
-                <div class="col-sm-3 text-sm-right text-muted">
-                  <small>{{ entry.date }}</small><br>
-                  <small>{{ entry.location }}</small>
-                </div>
-                <div class="col-sm-9">
-                  <h6 class="mb-0 font-weight-bold">{{ entry.institution }}</h6>
-                  <p class="mb-1 font-italic">{{ entry.degree }} {% if entry.area %}in {{ entry.area }}{% endif %}</p>
-                  {% if entry.highlights %}
-                    <ul class="mb-0 small text-muted">
-                      {% for highlight in entry.highlights %}<li>{{ highlight }}</li>{% endfor %}
-                    </ul>
-                  {% endif %}
-                </div>
-              </div>
+                    {% elsif section_title == 'Education' %}
+                      <h6 class="font-weight-bold mb-0">{{ entry.institution }}{% if entry.location %}, {{ entry.location }}{% endif %}</h6>
+                      <div class="font-italic">{{ entry.degree }} {% if entry.area %}in {{ entry.area }}{% endif %}</div>
+                      {% if entry.highlights %}
+                        <ul class="mt-1 mb-0 small">
+                          {% for highlight in entry.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                        </ul>
+                      {% endif %}
 
-            {% elsif section_title == 'Publications' %}
-              <div class="row mb-3">
-                <div class="col-sm-3 text-sm-right text-muted">
-                  <small>{{ entry.date }}</small>
-                </div>
-                <div class="col-sm-9">
-                  <h6 class="mb-0 font-weight-bold">{{ entry.title }}</h6>
-                  <p class="mb-1 small">
-                    {% if entry.authors %}{{ entry.authors | join: ", " }}<br>{% endif %}
-                    <em>{{ entry.journal }}</em>
-                    {% if entry.doi %} | DOI: {{ entry.doi }}{% endif %}
-                    {% if entry.url %} | <a href="{{ entry.url }}">Link</a>{% endif %}
-                  </p>
-                  {% if entry.summary %}<p class="mb-0 small text-muted">{{ entry.summary }}</p>{% endif %}
-                </div>
-              </div>
+                    {% elsif section_title == 'Publications' %}
+                      <h6 class="font-weight-bold mb-0">{{ entry.title }}</h6>
+                      <div class="small">
+                        {% if entry.authors %}{{ entry.authors | join: ", " }}<br>{% endif %}
+                        <em>{{ entry.journal }}</em>
+                        {% if entry.doi %} | DOI: {{ entry.doi }}{% endif %}
+                        {% if entry.url %} | <a href="{{ entry.url }}">Link</a>{% endif %}
+                      </div>
+                      {% if entry.summary %}<div class="mt-1 small text-muted">{{ entry.summary }}</div>{% endif %}
 
-            {% elsif section_title == 'Awards' %}
-              <div class="row mb-3">
-                <div class="col-sm-3 text-sm-right text-muted">
-                  <small>{{ entry.date }}</small>
-                </div>
-                <div class="col-sm-9">
-                  <h6 class="mb-0 font-weight-bold">{{ entry.name }}</h6>
-                  {% if entry.summary %}<p class="mb-0 small text-muted">{{ entry.summary }}</p>{% endif %}
-                </div>
-              </div>
+                    {% elsif section_title == 'Awards' %}
+                      <h6 class="font-weight-bold mb-0">{{ entry.name }}</h6>
+                      {% if entry.summary %}<div class="small text-muted">{{ entry.summary }}</div>{% endif %}
 
-            {% elsif section_title == 'Positions of Responsibility' %}
-              <div class="row mb-3">
-                <div class="col-sm-3 text-sm-right text-muted">
-                  <small>{{ entry.date }}</small><br>
-                  <small>{{ entry.location }}</small>
-                </div>
-                <div class="col-sm-9">
-                  <h6 class="mb-0 font-weight-bold">{{ entry.company }}</h6>
-                  <p class="mb-1 font-italic">{{ entry.position }}</p>
-                </div>
-              </div>
+                    {% elsif section_title == 'Positions of Responsibility' %}
+                      <h6 class="font-weight-bold mb-0">{{ entry.position }}</h6>
+                      <div class="font-italic">{{ entry.company }}</div>
 
-            {% elsif entry.label or entry.name %}
-              <div class="row mb-2">
-                <div class="col-sm-3 text-sm-right font-weight-bold">
-                  {% if entry.label %}{{ entry.label }}{% else %}{{ entry.name }}{% endif %}
-                </div>
-                <div class="col-sm-9 font-weight-light">
-                  {% if entry.details %}{{ entry.details }}{% endif %}
-                  {% if entry.keywords %}{{ entry.keywords }}{% endif %}
-                </div>
-              </div>
+                    {% elsif entry.label or entry.name %}
+                      <div>
+                        {% if entry.details %}{{ entry.details }}{% endif %}
+                        {% if entry.keywords %}{{ entry.keywords }}{% endif %}
+                      </div>
 
-            {% else %}
-              <p class="font-weight-light">{{ entry }}</p>
-            {% endif %}
-
-          {% endfor %}
+                    {% else %}
+                      <div>{{ entry }}</div>
+                    {% endif %}
+                    
+                  </td>
+                </tr>
+              {% endfor %}
+            </table>
+          {% endif %}
           </div>
         </div>
       {% endfor %}
