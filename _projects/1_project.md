@@ -2,7 +2,7 @@
 layout: page
 title: Quantum Assembly Index
 description: Quantifying molecular complexity through QTAIM electron-density topology, density-weighted graph paths, ring and cage contributions, and molecular symmetry.
-img: assets/img/Fig_final1.png
+img: assets/img/Fig_Final1.png
 importance: 2
 category: Computational & Theoretical Work
 ---
