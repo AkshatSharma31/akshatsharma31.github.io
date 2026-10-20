@@ -4,7 +4,7 @@ title: A Unified Theory of Core–Halo Complexity Maximizers
 description: A variational framework for generalized statistical complexity, establishing the emergence of core–halo probability distributions across discrete and continuous systems.
 img: assets/img/core_halo_complexity.png
 importance: 1
-category: Theoretical & Mathematical Physics
+category: Computation & Theoretical Work
 ---
 
 ### Project Overview
