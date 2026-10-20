@@ -2,10 +2,10 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: A collection of research projects bridging materials synthesis and theoretical chemistry.
+description: A research portfolio at the intersection of information theory, soft matter, statistical mechanics, and theoretical and experimental chemistry.
 nav: true
 nav_order: 3
-display_categories: ["Computational & Theoretical Chemistry", "Experimental Materials & Synthesis"]
+display_categories: ["Computational & Theoretical Work", "Experimental Materials & Synthesis"]
 horizontal: true
 ---
 
