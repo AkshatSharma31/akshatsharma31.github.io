@@ -133,18 +133,22 @@ layout: default
                             </ul>
                           {% endif %}
 
-                        {% elsif section_title == 'Publications' %}
-                          <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.title }}</h6>
-                          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
-                            {% if entry.authors %}{{ entry.authors | join: ", " }}<br>{% endif %}
-                            <em>{{ entry.journal }}</em>
-                            {% if entry.doi %} | DOI: {{ entry.doi }}{% endif %}
-                            {% if entry.url %} | <a href="{{ entry.url }}" target="_blank">Link</a>{% endif %}
-                          </h6>
-                          {% if entry.summary %}
-                            <h6 class="ml-1 ml-md-4 mt-2" style="font-size: 0.95rem; font-style: italic">{{ entry.summary }}</h6>
-                          {% endif %}
-
+                       {% elsif section_title == 'Publications' %}
+                         <h6 class="title font-weight-bold ml-1 ml-md-4">
+                           {% if entry.url %}
+                             <a href="{{ entry.url }}" target="_blank" style="color: inherit; text-decoration: underline;">{{ entry.title }}</a>
+                           {% else %}
+                             {{ entry.title }}
+                           {% endif %}
+                         </h6>
+                         <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">
+                           {% if entry.authors %}{{ entry.authors | join: ", " }}<br>{% endif %}
+                           <em>{{ entry.journal }}</em>
+                           {% if entry.doi %} | DOI: {{ entry.doi }}{% endif %}
+                         </h6>
+                         {% if entry.summary %}
+                           <h6 class="ml-1 ml-md-4 mt-2" style="font-size: 0.95rem; font-style: italic">{{ entry.summary }}</h6>
+                         {% endif %}
                         {% elsif section_title == 'Awards' %}
                           <h6 class="title font-weight-bold ml-1 ml-md-4">{{ entry.name }}</h6>
                           {% if entry.summary %}
