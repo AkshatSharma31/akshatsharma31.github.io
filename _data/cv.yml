@@ -96,9 +96,15 @@ cv:
         summary: "Selected among the top 5,000 students across India for academic excellence."
 
     Skills:
-      - label: Research Methods
-        details: "Statistical mechanics, Information-Theoretic analysis, Density Functional Theory, QTAIM, Molecular Dynamics, Python, Polyoxometalates, Self-Assembly, Single-Crystal Crystallography, Scientific Computing"
-
+      - label: Programming
+        details: "Python, C; numerical computation and mathematical modelling"
+      - label: Computational Chemistry
+        details: "DFT calculations, geometry optimization, vibrational-frequency analysis, electron-density topology; ORCA 6.0, Multiwfn, Avogadro"
+      - label: Experimental Methods
+        details: "Polyoxometalate synthesis, air-sensitive synthesis, UV–Vis, Raman spectroscopy, PXRD, SCXRD"
+      - label: Scientific Software
+        details: "Olex2, CrysAlisPro, Mercury, Origin, LATEX"
+        
     Positions of Responsibility:
       - company: IISER Kolkata Tennis Club
         position: Treasurer
