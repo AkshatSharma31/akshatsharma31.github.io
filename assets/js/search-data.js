@@ -394,9 +394,9 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-quantum-assembly-theory",
-          title: 'Quantum Assembly Theory',
-          description: "Introducing Aρ, a physically grounded quantum descriptor for molecular complexity derived from electron-density topology graphs and assembly constraints.",
+          section: "News",},{id: "projects-quantum-assembly-index",
+          title: 'Quantum Assembly Index',
+          description: "Quantifying molecular complexity through QTAIM electron-density topology, density-weighted graph paths, ring and cage contributions, and molecular symmetry.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-dft-analysis-of-zintl-clusters",
