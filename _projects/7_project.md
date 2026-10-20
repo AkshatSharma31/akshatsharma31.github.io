@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: A Unified Theory of Core–Halo Complexity Maximizers
@@ -8,7 +7,7 @@ importance: 1
 category: Theoretical & Mathematical Physics
 ---
 
-### Overview
+### Project Overview
 
 This project investigates the mathematical structure of probability distributions that maximize generalized statistical complexity. While entropy quantifies uncertainty or disorder, complexity measures aim to characterize the intermediate regime between perfect order and complete randomness. Understanding the structure of complexity-maximizing distributions is therefore a fundamental problem in information theory, statistical mechanics, and complex systems science.
 
