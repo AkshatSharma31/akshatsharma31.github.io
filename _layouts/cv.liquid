@@ -189,6 +189,8 @@ layout: default
                     <div class="card-text font-weight-light">
                       <strong>{{ entry.label }}:</strong> {{ entry.details }}
                     </div>
+                  {% else %}
+                    <p class="card-text font-weight-light" style="margin-bottom: 0;">{{ entry | markdownify | remove: '<p>' | remove: '</p>' }}</p>
                   {% endif %}
                 {% endfor %}
               {% endif %}
