@@ -79,6 +79,7 @@ cv:
         date: "2026-04-15"
         journal: ChemRxiv
         doi: "10.26434/chemrxiv.15000864/v4"
+        url: "https://doi.org/10.26434/chemrxiv.15000864/v4"
         summary: "Introduces the Quantum Assembly Index (Aρ), an information-theoretic measure of molecular organization derived directly from quantum electron density topology."
       
       - title: "A Unified Discrete and Continuous Theory of Core--Halo Complexity Maximizers"
