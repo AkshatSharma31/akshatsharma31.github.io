@@ -9,11 +9,11 @@ category: Computational & Theoretical Work
 
 ### Project Overview
 
-Molecular complexity is commonly quantified using graph-theoretic indices, structural counts, and cheminformatic descriptors. However, these approaches do not directly incorporate the electronic structure and real-space organization of molecules. In this work, I introduce the **Quantum Assembly Index (\(A_\rho\))**, a parameter-free descriptor that quantifies the physical complexity of chemical architectures using the topology of the electron density.
+Molecular complexity is commonly quantified using graph-theoretic indices, structural counts, and cheminformatic descriptors. However, these approaches do not directly incorporate the electronic structure and real-space organization of molecules. In this work, I introduce the **Quantum Assembly Index Aρ**, a parameter-free descriptor that quantifies the physical complexity of chemical architectures using the topology of the electron density.
 
 The index combines density-weighted shortest-path organization within molecular topology graphs with ring and cage contributions derived from critical points identified through the Quantum Theory of Atoms in Molecules (QTAIM). Rotational symmetry is incorporated to account for repetitive and symmetry-equivalent structural organization. This formulation connects molecular connectivity with the electronic and topological features of the underlying quantum-mechanical density.
 
-I evaluate \(A_\rho\) across a chemically diverse benchmark spanning small molecules, pharmaceuticals, biomolecular assemblies, coordination clusters, and extended frameworks. The results demonstrate that molecular size alone is insufficient to characterize complexity: systems with comparable atom counts can exhibit substantially different index values depending on their topology, symmetry, and electronic organization.
+I evaluate Aρ across a chemically diverse benchmark spanning small molecules, pharmaceuticals, biomolecular assemblies, coordination clusters, and extended frameworks. The results demonstrate that molecular size alone is insufficient to characterize complexity: systems with comparable atom counts can exhibit substantially different index values depending on their topology, symmetry, and electronic organization.
 
 ### Methodology: Electron-Density Topology
 
@@ -27,13 +27,13 @@ Electronic structures are obtained using computational quantum-chemistry methods
 
 ### Benchmarking and Predictive Performance
 
-I compare \(A_\rho\) with established cheminformatic descriptors, including Bertz complexity, the Balaban J index, Kier–Hall shape indices, connectivity indices, molecular weight, topological polar surface area, ring counts, and quantitative estimate of drug-likeness (QED).
+I compare Aρ with established cheminformatic descriptors, including Bertz complexity, the Balaban J index, Kier–Hall shape indices, connectivity indices, molecular weight, topological polar surface area, ring counts, and quantitative estimate of drug-likeness (QED).
 
 The principal findings include:
 
-- **Complexity Beyond Molecular Size:** The index distinguishes molecules of comparable size but different structural organization. For example, fullerene C₆₀ has a reported \(A_\rho\) of 0.188, whereas an adenine–thymine base-pair assembly has a reported value of 15.861.
-- **Comparative Classification Performance:** In the manuscript's binary classification benchmark, \(A_\rho\) achieves a reported ROC-AUC of 0.960, compared with 0.839 for a model combining conventional descriptors.
-- **Complementary Structural Information:** Correlation, feature-importance, and ablation analyses investigate the information captured by \(A_\rho\) beyond conventional molecular representations.
+- **Complexity Beyond Molecular Size:** The index distinguishes molecules of comparable size but different structural organization. For example, fullerene C₆₀ has a reported Aρ of 0.188, whereas an adenine–thymine base-pair assembly has a reported value of 15.861.
+- **Comparative Classification Performance:** In the manuscript's binary classification benchmark, Aρ achieves a reported ROC-AUC of 0.960, compared with 0.839 for a model combining conventional descriptors.
+- **Complementary Structural Information:** Correlation, feature-importance, and ablation analyses investigate the information captured by Aρ beyond conventional molecular representations.
 - **Statistical Validation:** The study employs stratified cross-validation, repeated resampling, external holdout evaluation, and label-permutation testing to assess predictive performance and robustness.
 
 ### Computational Implementation
@@ -42,7 +42,7 @@ The computational workflow integrates electronic-structure calculations, QTAIM t
 
 The principal computational limitation is the cost of generating suitable electron densities and performing complete topological analyses. The descriptor calculation itself is comparatively inexpensive once the required topological information is available.
 
-The molecular geometries, computed \(A_\rho\) values, and computational implementation are publicly available through the accompanying Zenodo repository.
+The molecular geometries, computed Aρ values, and computational implementation are publicly available through the accompanying Zenodo repository.
 
 ### Significance and Future Directions
 
