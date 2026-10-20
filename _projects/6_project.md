@@ -1,80 +1,72 @@
+```yaml
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
-category: fun
+title: Information-Theoretic Analysis of Molecular Dynamics
+description: Analyzing lysozyme conformational dynamics using backbone RMSD, Ramachandran distributions, Rényi entropy, and probability-simplex representations.
+img: assets/img/lysozyme_md.png
+importance: 2
+category: Computational & Theoretical Work
 ---
-
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
 ```
 
-{% endraw %}
+### Overview
+
+This project investigates the conformational dynamics of hen egg-white lysozyme through a combination of atomistic molecular dynamics (MD) simulation and information-theoretic analysis. A 1-nanosecond production trajectory was generated in an explicit, neutralized solvent environment using GROMACS, providing a time-dependent dataset for examining protein structural fluctuations and coarse-grained conformational distributions.
+
+The analysis combines conventional structural observables with an entropy-based description of backbone conformational sampling. Backbone root-mean-square deviation (RMSD) was used to characterize structural evolution, while Ramachandran dihedral angles were classified into three predefined regions to construct empirical probability distributions. These distributions were subsequently analyzed using Rényi entropies and represented geometrically on a two-dimensional probability simplex.
+
+### Methodology
+
+**1. Molecular Dynamics Simulation**
+
+The hen egg-white lysozyme structure (PDB ID: 1AKI) was simulated using GROMACS 2023.3 under an Ubuntu Linux environment. The system employed the Amber99SB force field and SPC/E water model, with chloride ions added to neutralize the system. Following energy minimization, the system underwent 100 ps of NVT equilibration and 100 ps of NPT equilibration at a reference temperature of 300 K and pressure of 1 bar. An unrestrained 1 ns production simulation was then performed using a 2 fs integration timestep.
+
+**2. Structural Stability Analysis**
+
+Backbone RMSD was calculated relative to the reference structure to characterize conformational deviations throughout the production trajectory. A cumulative running average was compared with a reference average calculated from the final 20% of the trajectory. This comparison was used to assess temporal stabilization of the selected observable, rather than to establish equilibrium or ergodicity.
+
+**3. Ramachandran-Based Coarse-Graining**
+
+Backbone \(\phi\) and \(\psi\) dihedral angles were extracted from the trajectory and assigned to three predefined categories: an alpha-helix-associated region, a beta-sheet-associated region, and a residual category containing all remaining observations. The resulting empirical probability vector,
+
+\[
+\mathbf{p}=(p_1,p_2,p_3),\qquad \sum_{i=1}^{3}p_i=1,
+\]
+
+provides a compact representation of the sampled backbone-angle distribution.
+
+**4. Information-Theoretic Analysis**
+
+Rényi entropy of order \(q\) was calculated from the empirical probability distributions, with Shannon entropy obtained in the limit \(q\to1\). The study examined the descriptor
+
+\[
+\phi(q)=H_1+2(q-1)H_q-(2q-1)H_{2q},
+\]
+
+for selected values of \(q\). Its temporal variation was used to characterize changes in the coarse-grained conformational distribution, without assuming that a plateau represents global entropy or complexity maximization.
+
+**5. Probability-Simplex Visualization**
+
+The three-state probability vectors were mapped onto a two-dimensional simplex, allowing changes in the relative populations of the predefined conformational categories to be visualized over time. The resulting path represents the evolution of empirical probability distributions across analysis windows, rather than the trajectory of an individual molecular configuration through the full conformational phase space.
+
+### Key Findings
+
+- **Temporal stabilization:** Backbone RMSD and its running average exhibit comparatively smaller changes during the later portions of the simulated trajectory.
+- **Nonuniform conformational sampling:** The Ramachandran distribution shows concentrated populations in commonly sampled backbone-angle regions, particularly alpha-helix-associated conformations.
+- **Entropy-based characterization:** The descriptor \(\phi(q)\) varies over the trajectory, with comparatively smaller changes in later analysis windows.
+- **Probability-simplex representation:** The three-state probability distributions provide a compact geometric visualization of temporal changes in coarse-grained backbone conformations.
+- **Methodological integration:** The workflow connects atomistic MD trajectory analysis with empirical probability distributions and information-theoretic descriptors.
+
+### Computational Tools
+
+- **GROMACS 2023.3:** Molecular dynamics simulation and trajectory analysis.
+- **Amber99SB and SPC/E:** Protein force field and explicit solvent model.
+- **Python, NumPy and Matplotlib:** Probability analysis, Rényi entropy calculations, and visualization.
+- **RMSD and Ramachandran analysis:** Conventional structural observables for examining conformational evolution.
+- **Probability-simplex mapping:** Geometric representation of coarse-grained empirical distributions.
+
+### Significance and Future Directions
+
+This project establishes a computational workflow for combining molecular dynamics with information-theoretic characterization of protein conformational sampling. By translating backbone dihedral-angle observations into probability distributions, it provides a compact way to track how coarse-grained structural populations change during a simulation.
+
+The current results are best interpreted as a proof of concept. The 1 ns trajectory and three-state classification do not establish ergodicity, equilibrium sampling, or global complexity maximization. Future work will focus on longer simulations, independent trajectory replicas, statistical uncertainty and autocorrelation analysis, sensitivity to classification boundaries, and finer-grained or continuous representations of backbone conformations.
