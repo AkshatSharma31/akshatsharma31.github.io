@@ -129,10 +129,10 @@ cv:
         location: West Bengal, India
 
     languages:
-      - name: English
-        proficiency: Professional working proficiency
-      - name: Hindi
-        proficiency: Native speaker
+      - label: English
+        details: Professional working proficiency
+      - label: Hindi
+        details: Native speaker
 
     relevant_coursework:
       - label: Chemistry
