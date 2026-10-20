@@ -8,7 +8,7 @@ cv:
     - network: GitHub
       username: AkshatSharma31
 
-  summary: "I am a fourth-year BS-MS student at the Indian Institute of Science Education and Research (IISER) Kolkata whose research lies at the intersection of chemistry, statistical mechanics, information theory, and applied mathematics. My work focuses on developing theoretical frameworks for understanding molecular organization, self-assembly, complexity, and the emergence of living matter using chemically realizable self-assembling systems as experimentally accessible model platforms. My long-term objective is to uncover universal principles governing organization across chemistry, physics, and biology."
+  summary: "I am a fourth-year BS-MS student in Chemical Sciences at the Indian Institute of Science Education and Research Kolkata, with a minor in Computational and Data Sciences. My research began with molecular self-assembly and electronic structure, and has increasingly led me toward quantitative questions concerning information, complexity, and organization. My current independent work develops theoretical frameworks for quantifying molecular and statistical complexity, including an information-theoretic descriptor based on electron-density topology and a variational theory of complexity-maximizing probability distributions."
 
   sections:
     Research Interests:
@@ -19,14 +19,14 @@ cv:
       - institution: Indian Institute of Science Education and Research (IISER) Kolkata
         area: Chemical Sciences
         degree: BS-MS Dual Degree
-        date: 2023 to 2028
+        date: 2023 - 2028
         location: West Bengal, India
         highlights:
           - "National Level Exams Qualified: Joint Entrance Examination (Advanced) • Joint Entrance Examination (Mains) • IISER Aptitude Test (IAT)"
       - institution: Baluni Public School
         area: CBSE Class XII
         degree: Senior Secondary School Certificate
-        date: 2022 to 2023
+        date: 2022 - 2023
         location: Uttarakhand, India
         highlights:
           - "Score: 88.8%"
@@ -41,7 +41,7 @@ cv:
     Experience:
       - company: Independent Research
         position: Independent Researcher
-        date: Jan 2026 to present
+        date: Jan 2026 - present
         location: India
         highlights:
           - "Investigate a possible connection between thermodynamic variance extrema and complexity maximization in a confined logarithmic-potential model motivated by Manning condensation."
@@ -52,7 +52,7 @@ cv:
 
       - company: IISER Kolkata
         position: Undergraduate Researcher
-        date: "Dec 2023 to present"
+        date: Dec 2023 - present
         location: West Bengal, India
         summary: "Supervisor: Dr. Soumyajit Roy"
         highlights:
@@ -65,7 +65,7 @@ cv:
 
       - company: IIT Ropar
         position: Research Intern
-        date: "May 2025 to Jul 2025"
+        date: May 2025 - Jul 2025
         location: Punjab, India
         summary: "Supervisor: Dr. C. M. Nagaraja"
         highlights:
@@ -101,7 +101,7 @@ cv:
     Positions of Responsibility:
       - company: IISER Kolkata Tennis Club
         position: Treasurer
-        date: Aug 2024 to Apr 2025
+        date: Aug 2024 - Apr 2025
         location: West Bengal, India
 
     Languages:
@@ -112,7 +112,7 @@ cv:
 
     Relevant Coursework:
       - name: Chemistry
-        keywords: "Phase Equilibrium Thermodynamics, Quantum Chemistry, Coordination Chemistry"
+        keywords: "Statistical Thermodynamics, Phase Equilibrium Thermodynamics, Quantum Chemistry, Coordination Chemistry"
       - name: Mathematics
         keywords: "Linear Algebra, Group Theory, Probability and Statistics, Information Theory, Graph Theory"
       - name: Computing
