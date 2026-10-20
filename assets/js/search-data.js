@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "Projects",
-          description: "A collection of research projects bridging materials synthesis and theoretical chemistry.",
+          description: "A research portfolio at the intersection of information theory, soft matter, statistical mechanics, and theoretical and experimental chemistry.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
