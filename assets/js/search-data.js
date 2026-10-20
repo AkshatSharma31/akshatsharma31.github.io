@@ -454,7 +454,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/Akshat_Sharma_CV_new.pdf", "_blank");
+          window.open("/assets/pdf/Curriculum_Vitae_new.pdf", "_blank");
         },
       },{
         id: 'social-email',
