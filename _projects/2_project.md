@@ -4,7 +4,7 @@ title: DFT Analysis of Zintl Clusters
 description: Independent quantum chemical investigation into the bonding architectures of heteroatomic Zintl cages, validated by TUM.
 importance: 4
 img: assets/img/pro2.png
-category: Computational & Theoretical Chemistry
+category: Computational & Theoretical Work
 ---
 
 > "Thank you for sharing your nice results." — **Prof. Dr. Thomas Fässler**, Technical University of Munich (TUM)
