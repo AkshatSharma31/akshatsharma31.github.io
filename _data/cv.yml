@@ -50,7 +50,7 @@ cv:
       - company: Independent Research
         position: Independent Researcher
         start_date: "2026-01"
-        end_date: "Present"
+        end_date: "present"
         location: India
         highlights:
           - >
@@ -67,7 +67,7 @@ cv:
       - company: IISER Kolkata
         position: Undergraduate Researcher
         start_date: "2023-12"
-        end_date: "Present"
+        end_date: "present"
         location: West Bengal, India
         summary: "Supervisor: Dr. Soumyajit Roy"
         highlights:
@@ -118,7 +118,7 @@ cv:
         summary: "Selected among the top 5,000 students across India for academic excellence."
 
     skills:
-      - name: Research Methods
+      - label: Research Methods
         details: "Statistical mechanics, Information-Theoretic analysis, Density Functional Theory, QTAIM, Molecular Dynamics, Python, Polyoxometalates, Self-Assembly, Single-Crystal Crystallography, Scientific Computing"
 
     positions_of_responsibility:
@@ -135,9 +135,9 @@ cv:
         proficiency: Native speaker
 
     relevant_coursework:
-      - name: Chemistry
+      - label: Chemistry
         details: "Phase Equilibrium Thermodynamics, Quantum Chemistry, Coordination Chemistry"
-      - name: Mathematics
+      - label: Mathematics
         details: "Linear Algebra, Group Theory, Probability and Statistics, Information Theory, Graph Theory"
-      - name: Computing
+      - label: Computing
         details: "Data Structures and Algorithms (DSA), Computer Architectures, Artificial Intelligence for Data Science."
