@@ -8,9 +8,10 @@ cv:
     - network: GitHub
       username: AkshatSharma31
 
-  summary: "I am a fourth-year BS-MS student in Chemical Sciences at the Indian Institute of Science Education and Research Kolkata, with a minor in Computational and Data Sciences. My research began with molecular self-assembly and electronic structure, and has increasingly led me toward quantitative questions concerning information, complexity, and organization. My current independent work develops theoretical frameworks for quantifying molecular and statistical complexity, including an information-theoretic descriptor based on electron-density topology and a variational theory of complexity-maximizing probability distributions."
-
   sections:
+    Summary:
+      - "I am a fourth-year BS-MS student at the Indian Institute of Science Education and Research (IISER) Kolkata whose research lies at the intersection of chemistry, statistical mechanics, information theory, and applied mathematics. My work focuses on developing theoretical frameworks for understanding molecular organization, self-assembly, complexity, and the emergence of living matter using chemically realizable self-assembling systems as experimentally accessible model platforms. My long-term objective is to uncover universal principles governing organization across chemistry, physics, and biology."
+      
     Research Interests:
       - label: Core Areas
         details: Statistical Mechanics, Complex Systems, Information Theory, Biophysics, Self-Organization
