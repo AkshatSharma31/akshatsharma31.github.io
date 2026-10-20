@@ -180,19 +180,65 @@ layout: default
                   {% endfor %}
                 </ul>
               {% else %}
+                <div class="card-text font-weight-light">
                 {% for entry in section_entries %}
-                  {% if entry.bullet %}
-                    <ul class="card-text font-weight-light list-group list-group-flush">
-                      <li class="list-group-item">{{ entry.bullet | markdownify | remove: '<p>' | remove: '</p>' }}</li>
-                    </ul>
-                  {% elsif entry.label %}
-                    <div class="card-text font-weight-light">
-                      <strong>{{ entry.label }}:</strong> {{ entry.details }}
+                  {% if entry.company or entry.institution %}
+                    <div class="row mb-3">
+                      <div class="col-sm-3 text-sm-right text-muted">
+                        <small>{% if entry.date %}{{ entry.date }}{% endif %}</small>
+                        {% if entry.location %}<br><small>{{ entry.location }}</small>{% endif %}
+                      </div>
+                      <div class="col-sm-9">
+                        <h6 class="mb-0 font-weight-bold">{% if entry.company %}{{ entry.company }}{% else %}{{ entry.institution }}{% endif %}</h6>
+                        <p class="mb-1 font-italic">{% if entry.position %}{{ entry.position }}{% else %}{{ entry.degree }}{% if entry.area %} in {{ entry.area }}{% endif %}{% endif %}</p>
+                        {% if entry.summary %}<p class="mb-1 small">{{ entry.summary }}</p>{% endif %}
+                        {% if entry.highlights %}
+                          <ul class="mb-0 small text-muted">
+                            {% for highlight in entry.highlights %}
+                              <li>{{ highlight }}</li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </div>
                     </div>
+                  
+                  {% elsif entry.title %}
+                    <div class="row mb-3">
+                      <div class="col-sm-3 text-sm-right text-muted">
+                        <small>{% if entry.date %}{{ entry.date }}{% endif %}</small>
+                      </div>
+                      <div class="col-sm-9">
+                        <h6 class="mb-0 font-weight-bold">{{ entry.title }}</h6>
+                        <p class="mb-1 small">
+                          {% if entry.authors %}{{ entry.authors | join: ", " }}<br>{% endif %}
+                          <em>{{ entry.journal }}</em>
+                          {% if entry.doi %} | DOI: {{ entry.doi }}{% endif %}
+                          {% if entry.url %} | <a href="{{ entry.url }}">Link</a>{% endif %}
+                        </p>
+                        {% if entry.summary %}<p class="mb-0 small text-muted">{{ entry.summary }}</p>{% endif %}
+                      </div>
+                    </div>
+
+                  {% elsif entry.label or entry.name %}
+                    <div class="row mb-2">
+                      <div class="col-sm-3 text-sm-right font-weight-bold">
+                        {% if entry.label %}{{ entry.label }}{% else %}{{ entry.name }}{% endif %}
+                      </div>
+                      <div class="col-sm-9">
+                        {% if entry.details %}{{ entry.details }}{% endif %}
+                        {% if entry.keywords %}{{ entry.keywords }}{% endif %}
+                      </div>
+                    </div>
+
                   {% else %}
-                    <p class="card-text font-weight-light" style="margin-bottom: 0;">{{ entry | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                    <div class="row mb-2">
+                      <div class="col-12">
+                        {{ entry | markdownify | remove: '<p>' | remove: '</p>' }}
+                      </div>
+                    </div>
                   {% endif %}
                 {% endfor %}
+                </div>
               {% endif %}
             </div>
           </div>
