@@ -424,6 +424,11 @@ ninja.data = [{
           description: "Analyzing lysozyme conformational dynamics using backbone RMSD, Ramachandran distributions, Rényi entropy, and probability-simplex representations.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/6_project/";
+            },},{id: "projects-a-unified-theory-of-core-halo-complexity-maximizers",
+          title: 'A Unified Theory of Core–Halo Complexity Maximizers',
+          description: "A variational framework for generalized statistical complexity, establishing the emergence of core–halo probability distributions across discrete and continuous systems.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_project/";
             },},{id: "projects-project-8",
           title: 'project 8',
           description: "an other project with a background image and giscus comments",
