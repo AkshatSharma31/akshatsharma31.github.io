@@ -3,7 +3,7 @@ layout: page
 title: Information-Theoretic Analysis of Molecular Dynamics
 description: Analyzing lysozyme conformational dynamics using backbone RMSD, Ramachandran distributions, Rényi entropy, and probability-simplex representations.
 img: assets/img/lysozyme_md.png
-importance: 2
+importance: 3
 category: Computational & Theoretical Work
 ---
 
