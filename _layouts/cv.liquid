@@ -1,267 +1,122 @@
 ---
 layout: default
 ---
-
 <div class="post">
   <header class="post-header">
-    <h1 class="post-title">
-      {{ page.title }}
-      {% if page.cv_pdf %}
-        <a
-          {% if page.cv_pdf contains '://' %}
-            href="{{ page.cv_pdf }}"
-          {% else %}
-            href="{{ page.cv_pdf | relative_url }}"
-          {% endif %}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="float-right"
-        >
-          <i class="fa-solid fa-file-pdf"></i>
-        </a>
-      {% endif %}
-    </h1>
-    {% if page.description %}
-      <p class="post-description">{{ page.description }}</p>
-    {% endif %}
+    <h1 class="post-title">{{ page.title }} {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
+    {% if page.description %}<p class="post-description">{{ page.description }}</p>{% endif %}
   </header>
 
   <article>
     <div class="cv">
-      {% assign render_rendercv = false %}
-      {% assign render_jsonresume = false %}
-
-      {% if page.cv_format == 'rendercv' %}
-        {% assign render_rendercv = true %}
-      {% elsif page.cv_format == 'jsonresume' %}
-        {% assign render_jsonresume = true %}
-      {% else %}
-        {% if site.data.cv and site.data.cv.cv %}
-          {% assign render_rendercv = true %}
-        {% elsif site.data.resume %}
-          {% assign render_jsonresume = true %}
-        {% endif %}
-      {% endif %}
-
-      {% if render_rendercv and site.data.cv and site.data.cv.cv %}
-        {% assign cv = site.data.cv.cv %}
-
-        {% if cv.name or cv.label or cv.location or cv.email or cv.phone or cv.website %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Contact Information</h3>
-            <table class="table table-cv table-sm table-borderless">
-              {% if cv.name %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.name }}</td>
-                </tr>
-              {% endif %}
-              {% if cv.label %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Professional Title</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.label }}</td>
-                </tr>
-              {% endif %}
-              {% if cv.email %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.email }}</td>
-                </tr>
-              {% endif %}
-              {% if cv.phone %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Phone</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ cv.phone }}</td>
-                </tr>
-              {% endif %}
-              {% if cv.address %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Location</b></td>
-                  <td class="p-1 pl-2 font-weight-light">
-                    {% if cv.address.street %}{{ cv.address.street }}, {% endif %}
-                    {% if cv.address.city %}{{ cv.address.city }}, {% endif %}
-                    {% if cv.address.region %}{{ cv.address.region }} {% endif %}
-                    {% if cv.address.postalCode %}{{ cv.address.postalCode }}{% endif %}
-                  </td>
-                </tr>
-              {% endif %}
-              {% if cv.website %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Website</b></td>
-                  <td class="p-1 pl-2 font-weight-light">
-                    <a href="{{ cv.website }}" target="_blank">{{ cv.website }}</a>
-                  </td>
-                </tr>
-              {% endif %}
-            </table>
-          </div>
-        {% endif %}
-
-        {% if cv.summary %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Professional Summary</h3>
-            <p>{{ cv.summary | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-          </div>
-        {% endif %}
-
-        {% assign empty_array = '' | split: ',' %}
-        {% assign exp = cv.sections.Experience | default: empty_array %}
-        {% assign vol = cv.sections.Volunteer | default: empty_array %}
-        {% assign combined_experience = exp | concat: vol %}
-        {% if combined_experience.size > 0 %}
-          <a class="anchor" id="experience"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Experience</h3>
-            <div>
-              {% assign entries = combined_experience %}
-              {% include cv/experience.liquid %}
-            </div>
-          </div>
-        {% endif %}
-
-        {% for section_pair in cv.sections %}
-          {% assign section_title = section_pair[0] %}
-          {% assign section_entries = section_pair[1] %}
-
-          {% if section_title == 'Experience' or section_title == 'Volunteer' %}
-            {% continue %}
-          {% endif %}
-
-          <a class="anchor" id="{{ section_title | slugify }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ section_title }}</h3>
-            <div>
-              {% if section_title == 'Education' %}
-                {% assign entries = section_entries %}
-                {% include cv/education.liquid %}
-              {% elsif section_title == 'Awards' or section_title == 'Honors and Awards' %}
-                {% assign entries = section_entries %}
-                {% include cv/awards.liquid %}
-              {% elsif section_title == 'Publications' %}
-                {% assign entries = section_entries %}
-                {% include cv/publications.liquid %}
-              {% elsif section_title == 'Skills' %}
-                {% assign entries = section_entries %}
-                {% include cv/skills.liquid %}
-              {% elsif section_title == 'Positions of Responsibility' %}
-                {% assign entries = section_entries %}
-                {% include cv/experience.liquid %}
-              {% elsif section_title == 'Languages' %}
-                {% assign entries = section_entries %}
-                {% include cv/languages.liquid %}
-              {% elsif section_title == 'Interests' or section_title == 'Academic Interests' or section_title == 'Research Interests' %}
-                {% assign entries = section_entries %}
-                {% include cv/interests.liquid %}
-              {% elsif section_title == 'Certificates' %}
-                {% assign entries = section_entries %}
-                {% include cv/certificates.liquid %}
-              {% elsif section_title == 'Projects' or section_title == 'Open Source Projects' %}
-                {% assign entries = section_entries %}
-                {% include cv/projects.liquid %}
-              {% elsif section_title == 'References' %}
-                {% assign entries = section_entries %}
-                {% include cv/references.liquid %}
-              {% elsif section_title == 'Relevant Coursework' %}
-                <ul class="card-text font-weight-light list-group list-group-flush">
-                  {% for course in section_entries %}
-                    <li class="list-group-item" style="border: none; padding-left: 0; padding-right: 0;">
-                      <div class="row">
-                        <div class="col-xs-2 col-sm-2 col-md-2 text-center" style="width: 75px;">
-                          <span class="badge font-weight-bold text-uppercase align-middle" style="min-width: 75px; background-color: var(--global-theme-color) !important; color: var(--global-bg-color) !important;">
-                            Course
-                          </span>
-                        </div>
-                        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
-                          <h6 class="title font-weight-bold ml-1 ml-md-4" style="margin-bottom: 0.25rem;">{{ course.name }}</h6>
-                          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic; color: var(--global-text-color-light);">{{ course.keywords }}</h6>
-                        </div>
-                      </div>
-                    </li>
-                  {% endfor %}
-                </ul>
-              {% else %}
-                <div class="card-text font-weight-light">
-                {% for entry in section_entries %}
-                  {% if entry.company or entry.institution %}
-                    <div class="row mb-3">
-                      <div class="col-sm-3 text-sm-right text-muted">
-                        <small>{% if entry.date %}{{ entry.date }}{% endif %}</small>
-                        {% if entry.location %}<br><small>{{ entry.location }}</small>{% endif %}
-                      </div>
-                      <div class="col-sm-9">
-                        <h6 class="mb-0 font-weight-bold">{% if entry.company %}{{ entry.company }}{% else %}{{ entry.institution }}{% endif %}</h6>
-                        <p class="mb-1 font-italic">{% if entry.position %}{{ entry.position }}{% else %}{{ entry.degree }}{% if entry.area %} in {{ entry.area }}{% endif %}{% endif %}</p>
-                        {% if entry.summary %}<p class="mb-1 small">{{ entry.summary }}</p>{% endif %}
-                        {% if entry.highlights %}
-                          <ul class="mb-0 small text-muted">
-                            {% for highlight in entry.highlights %}
-                              <li>{{ highlight }}</li>
-                            {% endfor %}
-                          </ul>
-                        {% endif %}
-                      </div>
-                    </div>
-                  
-                  {% elsif entry.title %}
-                    <div class="row mb-3">
-                      <div class="col-sm-3 text-sm-right text-muted">
-                        <small>{% if entry.date %}{{ entry.date }}{% endif %}</small>
-                      </div>
-                      <div class="col-sm-9">
-                        <h6 class="mb-0 font-weight-bold">{{ entry.title }}</h6>
-                        <p class="mb-1 small">
-                          {% if entry.authors %}{{ entry.authors | join: ", " }}<br>{% endif %}
-                          <em>{{ entry.journal }}</em>
-                          {% if entry.doi %} | DOI: {{ entry.doi }}{% endif %}
-                          {% if entry.url %} | <a href="{{ entry.url }}">Link</a>{% endif %}
-                        </p>
-                        {% if entry.summary %}<p class="mb-0 small text-muted">{{ entry.summary }}</p>{% endif %}
-                      </div>
-                    </div>
-
-                  {% elsif entry.label or entry.name %}
-                    <div class="row mb-2">
-                      <div class="col-sm-3 text-sm-right font-weight-bold">
-                        {% if entry.label %}{{ entry.label }}{% else %}{{ entry.name }}{% endif %}
-                      </div>
-                      <div class="col-sm-9">
-                        {% if entry.details %}{{ entry.details }}{% endif %}
-                        {% if entry.keywords %}{{ entry.keywords }}{% endif %}
-                      </div>
-                    </div>
-
-                  {% else %}
-                    <div class="row mb-2">
-                      <div class="col-12">
-                        {{ entry | markdownify | remove: '<p>' | remove: '</p>' }}
-                      </div>
-                    </div>
-                  {% endif %}
-                {% endfor %}
+      {% assign cv_data = site.data.cv.cv %}
+      
+      {% for section in cv_data.sections %}
+        {% assign section_title = section[0] %}
+        {% assign section_entries = section[1] %}
+        
+        <div class="card mt-3 p-3">
+          <h3 class="card-title font-weight-medium">{{ section_title }}</h3>
+          <div>
+          {% for entry in section_entries %}
+            
+            {% if section_title == 'Summary' %}
+              <p class="font-weight-light mb-0">{{ entry }}</p>
+            
+            {% elsif section_title == 'Experience' %}
+              <div class="row mb-3">
+                <div class="col-sm-3 text-sm-right text-muted">
+                  <small>{{ entry.date }}</small><br>
+                  <small>{{ entry.location }}</small>
                 </div>
-              {% endif %}
-            </div>
-          </div>
-        {% endfor %}
+                <div class="col-sm-9">
+                  <h6 class="mb-0 font-weight-bold">{{ entry.company }}</h6>
+                  <p class="mb-1 font-italic">{{ entry.position }}</p>
+                  {% if entry.summary %}<p class="mb-1 small">{{ entry.summary }}</p>{% endif %}
+                  {% if entry.highlights %}
+                    <ul class="mb-0 small text-muted">
+                      {% for highlight in entry.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                    </ul>
+                  {% endif %}
+                </div>
+              </div>
 
-      {% elsif render_jsonresume and site.data.resume %}
-        {% if site.data.resume.basics %}
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">Contact Information</h3>
-            {% assign basics = site.data.resume.basics %}
-            <table class="table table-cv table-sm table-borderless">
-              {% if basics.name %}
-                <tr>
-                  <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td>
-                  <td class="p-1 pl-2 font-weight-light">{{ basics.name }}</td>
-                </tr>
-              {% endif %}
-            </table>
+            {% elsif section_title == 'Education' %}
+              <div class="row mb-3">
+                <div class="col-sm-3 text-sm-right text-muted">
+                  <small>{{ entry.date }}</small><br>
+                  <small>{{ entry.location }}</small>
+                </div>
+                <div class="col-sm-9">
+                  <h6 class="mb-0 font-weight-bold">{{ entry.institution }}</h6>
+                  <p class="mb-1 font-italic">{{ entry.degree }} {% if entry.area %}in {{ entry.area }}{% endif %}</p>
+                  {% if entry.highlights %}
+                    <ul class="mb-0 small text-muted">
+                      {% for highlight in entry.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                    </ul>
+                  {% endif %}
+                </div>
+              </div>
+
+            {% elsif section_title == 'Publications' %}
+              <div class="row mb-3">
+                <div class="col-sm-3 text-sm-right text-muted">
+                  <small>{{ entry.date }}</small>
+                </div>
+                <div class="col-sm-9">
+                  <h6 class="mb-0 font-weight-bold">{{ entry.title }}</h6>
+                  <p class="mb-1 small">
+                    {% if entry.authors %}{{ entry.authors | join: ", " }}<br>{% endif %}
+                    <em>{{ entry.journal }}</em>
+                    {% if entry.doi %} | DOI: {{ entry.doi }}{% endif %}
+                    {% if entry.url %} | <a href="{{ entry.url }}">Link</a>{% endif %}
+                  </p>
+                  {% if entry.summary %}<p class="mb-0 small text-muted">{{ entry.summary }}</p>{% endif %}
+                </div>
+              </div>
+
+            {% elsif section_title == 'Awards' %}
+              <div class="row mb-3">
+                <div class="col-sm-3 text-sm-right text-muted">
+                  <small>{{ entry.date }}</small>
+                </div>
+                <div class="col-sm-9">
+                  <h6 class="mb-0 font-weight-bold">{{ entry.name }}</h6>
+                  {% if entry.summary %}<p class="mb-0 small text-muted">{{ entry.summary }}</p>{% endif %}
+                </div>
+              </div>
+
+            {% elsif section_title == 'Positions of Responsibility' %}
+              <div class="row mb-3">
+                <div class="col-sm-3 text-sm-right text-muted">
+                  <small>{{ entry.date }}</small><br>
+                  <small>{{ entry.location }}</small>
+                </div>
+                <div class="col-sm-9">
+                  <h6 class="mb-0 font-weight-bold">{{ entry.company }}</h6>
+                  <p class="mb-1 font-italic">{{ entry.position }}</p>
+                </div>
+              </div>
+
+            {% elsif entry.label or entry.name %}
+              <div class="row mb-2">
+                <div class="col-sm-3 text-sm-right font-weight-bold">
+                  {% if entry.label %}{{ entry.label }}{% else %}{{ entry.name }}{% endif %}
+                </div>
+                <div class="col-sm-9 font-weight-light">
+                  {% if entry.details %}{{ entry.details }}{% endif %}
+                  {% if entry.keywords %}{{ entry.keywords }}{% endif %}
+                </div>
+              </div>
+
+            {% else %}
+              <p class="font-weight-light">{{ entry }}</p>
+            {% endif %}
+
+          {% endfor %}
           </div>
-        {% endif %}
-      {% else %}
-        <p>No CV data found. Please configure either RenderCV (cv.yml) or JSONResume (resume.json) data.</p>
-      {% endif %}
+        </div>
+      {% endfor %}
     </div>
   </article>
 </div>
