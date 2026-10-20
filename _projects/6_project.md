@@ -1,4 +1,3 @@
-
 ---
 layout: page
 title: Information-Theoretic Analysis of Molecular Dynamics
