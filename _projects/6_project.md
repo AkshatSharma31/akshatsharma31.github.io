@@ -25,7 +25,7 @@ Backbone RMSD was calculated relative to the reference structure to characterize
 
 **3. Ramachandran-Based Coarse-Graining**
 
-Backbone φ and \(\psi\) dihedral angles were extracted from the trajectory and assigned to three predefined categories: an alpha-helix-associated region, a beta-sheet-associated region, and a residual category containing all remaining observations. The resulting empirical probability vector,
+Backbone Φ and ψ dihedral angles were extracted from the trajectory and assigned to three predefined categories: an alpha-helix-associated region, a beta-sheet-associated region, and a residual category containing all remaining observations. The resulting empirical probability vector
 
 \mathbf{p}=(p_1,p_2,p_3),\quad \sum_{i=1}^{3}p_i=1,
 
@@ -35,9 +35,9 @@ provides a compact representation of the sampled backbone-angle distribution.
 
 We calculated the Rényi entropy of order q from the empirical probability distributions, with Shannon entropy obtained in the limit \(q\to1\). The study examined the descriptor
 
-φ(q)=H_1+2(q-1)Hq-(2q-1)H2q,
+Φ(q)=H_1+2(q-1)Hq-(2q-1)H2q,
 
-for selected values of \(q\). We used its temporal variation to characterize changes in the coarse-grained conformational distribution, without assuming that a plateau represents global entropy or complexity maximization.
+for selected values of q. We used its temporal variation to characterize changes in the coarse-grained conformational distribution, without assuming that a plateau represents global entropy or complexity maximization.
 
 **5. Probability-Simplex Visualization**
 
@@ -47,7 +47,7 @@ The three-state probability vectors were mapped onto a two-dimensional simplex, 
 
 - **Temporal stabilization:** Backbone RMSD and its running average exhibit comparatively smaller changes during the later portions of the simulated trajectory.
 - **Nonuniform conformational sampling:** The Ramachandran distribution shows concentrated populations in commonly sampled backbone-angle regions, particularly alpha-helix-associated conformations.
-- **Entropy-based characterization:** The descriptor φ(q) varies over the trajectory, with comparatively smaller changes in later analysis windows.
+- **Entropy-based characterization:** The descriptor Φ(q) varies over the trajectory, with comparatively smaller changes in later analysis windows.
 - **Probability-simplex representation:** The three-state probability distributions provide a compact geometric visualization of temporal changes in coarse-grained backbone conformations.
 - **Methodological integration:** The workflow connects atomistic MD trajectory analysis with empirical probability distributions and information-theoretic descriptors.
 
