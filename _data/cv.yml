@@ -77,9 +77,9 @@ cv:
       - title: "Quantifying the physical complexity of chemical architectures through electron-density topology"
         authors:
           - "Akshat Sharma"
-        date: "2026-04-15"
-        journal: ChemRxiv
-        url: "https://doi.org/10.26434/chemrxiv.15000864/v4"
+        date: "2026-10-24"
+        journal: Journal of Molecular Modeling
+        url: "https://doi.org/10.1007/s00894-026-07017-7"
         summary: "Introduces the Quantum Assembly Index (Aρ), an information-theoretic measure of molecular organization derived directly from quantum electron density topology."
       
       - title: "A Unified Discrete and Continuous Theory of Core–Halo Complexity Maximizers"
